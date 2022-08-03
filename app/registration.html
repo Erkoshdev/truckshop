@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="page-wrapper registration-page">
+        <div class="container-sm">
+            <a href="" class="backlink">Вернуться назад</a>
+            <div class="authorize-box">
+                <div class="authorize-box-left">
+                    <div class="authorize-box-header">
+                        <h2>Регистрация нового пользователя</h2>
+                    </div>
+                    <div class="authorize-box-form">
+                        <ul class="nav nav-tabs registration-nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#buyer">
+                                    <span class="checkmark"></span>
+                                    <p>Я покупатель</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#seller">
+                                    <span class="checkmark"></span>
+                                    <p>Я продавец</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content registration-tab-content">
+                            <div class="tab-pane active" id="buyer">
+                                <div class="form-group form-group-lg light">
+                                    <input class="phone-mask" type="text" placeholder="Введите телефон">
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <div class="form-group form-group-lg light">
+                                        <input type="password" placeholder="Введите пароль">
+                                    </div>
+                                    <span class="form-group-info">Пароль должен быть не менее 6 символов длиной</span>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="seller">
+                                <div class="half-form">
+                                    <div class="form-group form-group-lg light">
+                                        <input type="number" placeholder="БИН компании">
+                                    </div>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="text" placeholder="Юр. название">
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-lg light">
+                                    <input type="text" placeholder="Юр. адрес">
+                                </div>
+                                <a href="" class="download-link">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4V12.1893L8.53032 9.46967C8.23742 9.17678 7.76255 9.17678 7.46966 9.46967C7.17676 9.76256 7.17676 10.2374 7.46966 10.5303L11.4697 14.5303C11.6103 14.671 11.8011 14.75 12 14.75C12.1989 14.75 12.3897 14.671 12.5303 14.5303L16.5303 10.5303C16.8232 10.2374 16.8232 9.76256 16.5303 9.46967C16.2374 9.17678 15.7625 9.17678 15.4697 9.46967L12.75 12.1893V4ZM3.75 15C3.75 14.5858 3.41421 14.25 3 14.25C2.58579 14.25 2.25 14.5858 2.25 15V15.4999V15.5451C2.24999 16.6796 2.24997 17.5943 2.33222 18.3238C2.41726 19.0781 2.5981 19.7266 3.02497 20.2829C3.22445 20.5429 3.45713 20.7756 3.71708 20.9751C4.27338 21.4019 4.92192 21.5828 5.67621 21.6678C6.40571 21.75 7.32041 21.75 8.45483 21.75H8.45486H8.50008H15.4999H15.5451C16.6796 21.75 17.5943 21.75 18.3238 21.6678C19.0781 21.5828 19.7266 21.4019 20.2829 20.9751C20.5429 20.7756 20.7756 20.5429 20.975 20.2829C21.4019 19.7266 21.5827 19.0781 21.6678 18.3238C21.75 17.5943 21.75 16.6796 21.75 15.5451V15.4999V15C21.75 14.5858 21.4142 14.25 21 14.25C20.5858 14.25 20.25 14.5858 20.25 15V15.4999C20.25 16.6902 20.2489 17.5201 20.1772 18.1558C20.1073 18.7763 19.9781 19.1181 19.785 19.3698C19.6653 19.5257 19.5257 19.6654 19.3697 19.785C19.1181 19.9781 18.7763 20.1073 18.1557 20.1772C17.5201 20.2489 16.6902 20.25 15.4999 20.25H8.50008C7.30981 20.25 6.47988 20.2489 5.84425 20.1772C5.22374 20.1073 4.88189 19.9781 4.63025 19.785C4.47428 19.6654 4.33467 19.5257 4.21498 19.3698C4.02188 19.1181 3.89273 18.7763 3.82278 18.1558C3.75112 17.5201 3.75 16.6902 3.75 15.4999L3.75 15Z" fill="#1C6BB9"/>
+                                    </svg>
+                                    <span>Загрузить устав</span>
+                                </a>
+                                <div class="bank-details">
+                                    <h6>Банковские реквизиты</h6>
+                                    <div class="half-form">
+                                        <div class="form-group form-group-lg light">
+                                            <i class="icon"></i>
+                                            <input type="number" placeholder="БИК">
+                                        </div>
+                                        <div class="form-group form-group-lg light">
+                                            <i class="icon"></i>
+                                            <input type="number" placeholder="Номер счета">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group form-group-lg light">
+                                    <input type="text" placeholder="Номер или Почта контактного лица">
+                                </div>
+                                <div class="form-group form-group-lg light">
+                                    <input type="text" placeholder="Имя директора">
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <div class="form-group form-group-lg light">
+                                        <input type="password" placeholder="Введите пароль">
+                                    </div>
+                                    <span class="form-group-info">Пароль должен быть не менее 6 символов длиной</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accept-form dark">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p>Нажимая кнопку «Зарегистрироваться», я даю свое <br>согласие на обработку моих персональных данных</p>
+                    </div>
+                    <div class="authorize-box-bottom">
+                        <button class="btn btn-main btn-lg">Зарегистрироваться</button>
+                        <div class="authorize-toggle">
+                            <p>У меня уже есть аккаунт</p>
+                            <a href="index.html" class="authorize-toggle-link">Авторизоваться</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="authorize-box-right">
+                    <div class="authorize-box-logo">
+                        <img src="img/logo/logo-white.svg" alt="">
+                    </div>
+                    <div class="authorize-box-img">
+                        <img class="buyer-img" src="img/main/registration-buyer.png" alt="">
+                        <img class="seller-img" src="img/main/registration-seller.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  //phone-mask
+  $(document).ready(function (){
+    $('.phone-mask').mask('+0000 000 0000');
+  });
+
+  //изменять картинку авторизации при разных табах
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    var target = $(e.target).attr("href")
+    if(target === '#buyer') {
+      $('.buyer-img').css('display', 'block');
+      $('.seller-img').css('display', 'none');
+    } else if(target === '#seller') {
+      $('.buyer-img').css('display', 'none');
+      $('.seller-img').css('display', 'block');
+    }
+  });
+
+</script>
+</body>
+</html>

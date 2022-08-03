@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="container" style="padding: 100px 0">
+    <!--buttons-->
+    <button class="btn btn-main btn-lg">
+        <span>click</span>
+    </button>
+    <button class="btn btn-stroke btn-lg">Click</button>
+    <button class="btn btn-stroke btn-lg">Click</button>
+
+    <!--input-forms-->
+    <div class="form-group">
+        <i class="icon"></i>
+        <input type="text" placeholder="Input">
+    </div>
+    <div class="form-group light">
+        <i class="icon"></i>
+        <input type="text" placeholder="Input">
+    </div>
+    <div class="form-group">
+        <i class="icon"></i>
+        <input class="phone-mask" type="text" placeholder="Input">
+    </div>
+    <select class="form-group select-form"  title="Select placeholder">
+        <option>select option</option>
+        <option>select option</option>
+        <option>select option</option>
+        <option>select option</option>
+        <option>select option</option>
+    </select>
+
+    <!--input half form-->
+    <div class="half-form">
+        <div class="form-group">
+            <i class="icon icon-user"></i>
+            <input type="text" placeholder="Input">
+        </div>
+        <div class="form-group">
+            <i class="icon icon-user"></i>
+            <input type="text" placeholder="Input">
+        </div>
+    </div>
+    <!--input third form-->
+    <div class="third-form">
+        <div class="form-group">
+            <i class="icon icon-user"></i>
+            <input type="text" placeholder="Input">
+        </div>
+        <div class="form-group">
+            <i class="icon icon-user"></i>
+            <input type="text" placeholder="Input">
+        </div>
+        <div class="form-group">
+            <i class="icon icon-user"></i>
+            <input type="text" placeholder="Input">
+        </div>
+    </div>
+    <!--textarea-->
+    <div class="form-group textarea-form">
+        <i class="icon icon-text"></i>
+        <textarea rows="5" placeholder="Message"></textarea>
+    </div>
+
+    <!--accept form-->
+    <div class="accept-form">
+        <label class="checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <p>Я прочитал и принимаю все<a href="">условия пользователя</a></p>
+    </div>
+    <div class="accept-form dark">
+        <label class="checkbox">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <p>Я прочитал и принимаю все<a href="">условия пользователя</a></p>
+    </div>
+
+    <!--product card-->
+    <div class="product-card">
+        <button class="btn-plain product-card-favourite active">
+            <i class="icon icon-favourite-gray"></i>
+        </button>
+        <div class="product-card-img">
+            <img src="img/content/product-img.png" alt="">
+            <a href="" class="absolute-link"></a>
+        </div>
+        <div class="product-card-caption">
+            <div class="product-name">
+                <p>Ashuki 024567846</p>
+                <a href="" class="absolute-link"></a>
+            </div>
+            <div class="product-category">
+                <p>Рулевое управление</p>
+            </div>
+            <div class="product-detail">
+                <div class="product-detail-item">
+                    <p>Арт:</p>
+                    <span>ASK1421</span>
+                </div>
+                <div class="product-detail-item">
+                    <p>Код:</p>
+                    <span>0654812</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-card-price">
+            <p>от 150 000 тг</p>
+            <a href="" class="btn btn-main btn-sm product-card-btn">
+                <div class="product-card-btn-left">
+                    <i class="icon icon-basket"></i>
+                    <span>Купить</span>
+                </div>
+                <div class="product-card-btn-right">
+                    <span>В наличии: 15 шт</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--breadcrumb-->
+    <ul class="breadcrumb">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Pictures</a>
+        </li>
+        <li>
+            <a href="#">Summer</a>
+        </li>
+        <li>Italy</li>
+    </ul>
+
+    <!--pagination-->
+    <ul class="pagination">
+        <li class="page-item">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">4</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link disabled" href="#">...</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">15</a>
+        </li>
+    </ul>
+
+    <!--checkbox group-->
+    <label class="checkbox-container">One
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
+</div>
+<script src="js/libs.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  //select
+  $('.select-form').selectpicker({
+    style: '',
+  });
+  $('.select-form').on('changed.bs.select', function (e) {
+    $(this).prevAll('.dropdown-toggle').toggleClass('bs-placeholder', this.value === '');
+  }).trigger('changed.bs.select');
+</script>
+</body>
+</html>
