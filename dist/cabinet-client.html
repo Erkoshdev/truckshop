@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="page-wrapper cabinet client-cabinet">
+        <div class="cabinet-left">
+            <a href="index.html">
+                <img src="img/logo/client-logo.svg" alt="">
+            </a>
+        </div>
+        <div class="cabinet-wrapper">
+            <div class="cabinet-header">
+                <div class="cabinet-container">
+                    <div class="cabinet-header-row">
+                        <ul class="cabinet-header-nav">
+                            <li>
+                                <a href="">Информация для продавцов</a>
+                            </li>
+                            <li>
+                                <a href="">Информация для покупателей</a>
+                            </li>
+                            <li>
+                                <a href="">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="">Акции</a>
+                            </li>
+                            <li>
+                                <a href="">О компании</a>
+                            </li>
+                            <li>
+                                <a href="">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="cabinet-header-tools">
+                            <a href="" class="cabinet-header-messages">
+                                <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18 4.032V11.1562C18 12.6727 16.7792 13.9118 15.241 13.9955L15.075 14H2.925C1.36527 14 0.0906787 12.8131 0.00463035 11.3176L0 11.1562V4.032L8.6868 8.45633C8.88296 8.55622 9.11704 8.55622 9.3132 8.45633L18 4.032ZM2.925 0H15.075C16.5913 0 17.8381 1.12167 17.9854 2.5581L9 7.13417L0.0145725 2.5581C0.156475 1.17487 1.31789 0.0835187 2.75768 0.00457495L2.925 0H15.075H2.925Z" fill="#818294"/>
+                                </svg>
+                                Сообщения
+                                <span class="notice-number">2</span>
+                            </a>
+                            <div class="dropdown profile-dropdown">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect width="30" height="30" rx="15" fill="url(#pattern0)"/>
+                                    <defs>
+                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_138_2045" transform="scale(0.005)"/>
+                                        </pattern>
+                                        <image id="image0_138_2045" width="200" height="200" xlink:href="data:image/png;base64,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"/>
+                                    </defs>
+                                </svg>
+                                <button class="dropdown-toggle" data-toggle="dropdown">Мой профиль</button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" type="button" href="#" data-toggle="modal" data-target="#profileSet">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C10.4812 1.25 9.25002 2.48122 9.25002 4V4.75228C9.10444 4.80755 8.96097 4.86706 8.81976 4.93068L8.28769 4.3986C7.21375 3.32466 5.47254 3.32466 4.3986 4.3986C3.32466 5.47254 3.32466 7.21375 4.3986 8.28769L4.93068 8.81976C4.86706 8.96097 4.80755 9.10443 4.75229 9.25H4C2.48122 9.25 1.25 10.4812 1.25 12C1.25 13.5188 2.48122 14.75 4 14.75H4.75229C4.80755 14.8956 4.86706 15.039 4.93068 15.1802L4.3986 15.7123C3.32466 16.7863 3.32466 18.5275 4.3986 19.6014L4.92893 19.0711L4.3986 19.6014C5.47254 20.6753 7.21375 20.6753 8.28769 19.6014L8.81976 19.0693C8.96097 19.1329 9.10444 19.1925 9.25002 19.2477V20C9.25002 21.5188 10.4812 22.75 12 22.75C13.5188 22.75 14.75 21.5188 14.75 20V19.2477C14.8956 19.1924 15.039 19.1329 15.1802 19.0693L15.7123 19.6014C16.7863 20.6753 18.5275 20.6753 19.6014 19.6014C20.6753 18.5275 20.6753 16.7863 19.6014 15.7123L19.0693 15.1802C19.1329 15.039 19.1925 14.8956 19.2477 14.75H20C21.5188 14.75 22.75 13.5188 22.75 12C22.75 10.4812 21.5188 9.25 20 9.25H19.2477C19.1925 9.10443 19.1329 8.96096 19.0693 8.81976L19.6014 8.28769C20.6753 7.21375 20.6753 5.47254 19.6014 4.3986L19.0711 4.92893L19.6014 4.3986C18.5275 3.32466 16.7863 3.32466 15.7123 4.3986L15.1802 4.93067C15.039 4.86706 14.8956 4.80755 14.75 4.75229V4C14.75 2.48122 13.5188 1.25 12 1.25ZM10.75 4C10.75 3.30964 11.3097 2.75 12 2.75C12.6904 2.75 13.25 3.30964 13.25 4V5.28988C13.25 5.6217 13.468 5.91407 13.7861 6.00872C14.2013 6.1323 14.5985 6.29794 14.9729 6.50079C15.2647 6.65893 15.6258 6.60642 15.8605 6.37171L16.773 5.45926C17.2611 4.97111 18.0526 4.97111 18.5407 5.45926C19.0289 5.94742 19.0289 6.73887 18.5407 7.22703L17.6283 8.13947C17.3936 8.37419 17.3411 8.73528 17.4992 9.02713C17.7021 9.40148 17.8677 9.79872 17.9913 10.2139C18.0859 10.532 18.3783 10.75 18.7101 10.75H20C20.6904 10.75 21.25 11.3096 21.25 12C21.25 12.6904 20.6904 13.25 20 13.25H18.7101C18.3783 13.25 18.0859 13.468 17.9913 13.7861C17.8677 14.2013 17.7021 14.5985 17.4992 14.9729C17.3411 15.2647 17.3936 15.6258 17.6283 15.8605L18.5407 16.773C19.0289 17.2611 19.0289 18.0526 18.5407 18.5407C18.0526 19.0289 17.2611 19.0289 16.773 18.5407L15.8605 17.6283C15.6258 17.3936 15.2647 17.3411 14.9729 17.4992C14.5985 17.7021 14.2013 17.8677 13.7861 17.9913C13.4681 18.0859 13.25 18.3783 13.25 18.7101V20C13.25 20.6904 12.6904 21.25 12 21.25C11.3097 21.25 10.75 20.6904 10.75 20V18.7101C10.75 18.3783 10.532 18.0859 10.214 17.9913C9.79873 17.8677 9.40148 17.7021 9.02713 17.4992C8.73528 17.3411 8.37419 17.3936 8.13948 17.6283L7.22703 18.5407C6.73887 19.0289 5.94742 19.0289 5.45926 18.5407C4.97111 18.0526 4.97111 17.2611 5.45926 16.773L6.37171 15.8605C6.60643 15.6258 6.65894 15.2647 6.50079 14.9729C6.29794 14.5985 6.1323 14.2013 6.00872 13.7861C5.91407 13.468 5.6217 13.25 5.28988 13.25H4C3.30964 13.25 2.75 12.6904 2.75 12C2.75 11.3096 3.30964 10.75 4 10.75H5.28988C5.62169 10.75 5.91407 10.532 6.00872 10.2139C6.1323 9.79872 6.29794 9.40148 6.50079 9.02713C6.65894 8.73528 6.60643 8.37419 6.37171 8.13948L5.45926 7.22703C4.97111 6.73887 4.97111 5.94742 5.45926 5.45926C5.94742 4.97111 6.73887 4.97111 7.22703 5.45926L8.13948 6.37171C8.37419 6.60643 8.73528 6.65894 9.02713 6.50079C9.40149 6.29793 9.79873 6.13229 10.214 6.00872C10.532 5.91407 10.75 5.62169 10.75 5.28988V4ZM9.75 12C9.75 10.7574 10.7574 9.75 12 9.75C13.2426 9.75 14.25 10.7574 14.25 12C14.25 13.2426 13.2426 14.25 12 14.25C10.7574 14.25 9.75 13.2426 9.75 12ZM12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25Z" fill="#818294"/>
+                                        </svg>
+                                        <span>Настройки профиля</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1.25061H7.96421C7.05997 1.2506 6.33069 1.25059 5.7424 1.30391C5.13605 1.35887 4.60625 1.47517 4.125 1.75302C3.55493 2.08215 3.08154 2.55554 2.75241 3.12561C2.47456 3.60686 2.35826 4.13666 2.3033 4.74301C2.24999 5.33129 2.24999 6.06054 2.25 6.96476V6.96482V7.00061L2.25 17.0006V17.0364C2.24999 17.9406 2.24998 18.6699 2.3033 19.2582C2.35826 19.8646 2.47455 20.3944 2.7524 20.8756C3.08154 21.4457 3.55493 21.9191 4.125 22.2482C4.60625 22.5261 5.13605 22.6424 5.7424 22.6973C6.33069 22.7506 7.05995 22.7506 7.96418 22.7506H8H8.03582C8.94005 22.7506 9.66932 22.7506 10.2576 22.6973C10.8639 22.6424 11.3937 22.5261 11.875 22.2482C12.4451 21.9191 12.9185 21.4457 13.2476 20.8756C13.5254 20.3944 13.6417 19.8646 13.6967 19.2582C13.75 18.6699 13.75 17.9406 13.75 17.0364V17.0006V16.0006C13.75 15.5864 13.4142 15.2506 13 15.2506C12.5858 15.2506 12.25 15.5864 12.25 16.0006V17.0006C12.25 17.949 12.2493 18.6102 12.2028 19.1228C12.1573 19.6251 12.0726 19.9107 11.9486 20.1256C11.7511 20.4677 11.467 20.7517 11.125 20.9492C10.9101 21.0732 10.6245 21.1579 10.1222 21.2034C9.60959 21.2499 8.94842 21.2506 8 21.2506C7.05158 21.2506 6.39041 21.2499 5.87779 21.2034C5.37549 21.1579 5.0899 21.0732 4.875 20.9492C4.53296 20.7517 4.24892 20.4677 4.05144 20.1256C3.92737 19.9107 3.84271 19.6251 3.79718 19.1228C3.75072 18.6102 3.75 17.949 3.75 17.0006L3.75 7.00061C3.75 6.05219 3.75072 5.39102 3.79718 4.8784C3.84271 4.3761 3.92737 4.09051 4.05145 3.87561C4.24892 3.53357 4.53296 3.24953 4.875 3.05205C5.0899 2.92798 5.37549 2.84332 5.87779 2.79779C6.39041 2.75133 7.05158 2.75061 8 2.75061C8.94842 2.75061 9.60959 2.75133 10.1222 2.79779C10.6245 2.84332 10.9101 2.92798 11.125 3.05205C11.467 3.24953 11.7511 3.53357 11.9486 3.87561C12.0726 4.09051 12.1573 4.3761 12.2028 4.8784C12.2493 5.39102 12.25 6.05219 12.25 7.00061V8.00061C12.25 8.41482 12.5858 8.75061 13 8.75061C13.4142 8.75061 13.75 8.41482 13.75 8.00061V7.00061V6.96484C13.75 6.06059 13.75 5.33131 13.6967 4.74301C13.6417 4.13666 13.5254 3.60686 13.2476 3.12561C12.9185 2.55554 12.4451 2.08215 11.875 1.75302C11.3938 1.47517 10.8639 1.35887 10.2576 1.30391C9.66931 1.25059 8.94003 1.2506 8.03579 1.25061H8ZM17.5303 7.46979C17.2374 7.1769 16.7626 7.1769 16.4697 7.46979C16.1768 7.76269 16.1768 8.23756 16.4697 8.53045L19.1893 11.2501L8 11.2501C7.58579 11.2501 7.25 11.5859 7.25 12.0001C7.25 12.4143 7.58579 12.7501 8 12.7501L19.1893 12.7501L16.4697 15.4698C16.1768 15.7627 16.1768 16.2376 16.4697 16.5305C16.7626 16.8233 17.2374 16.8233 17.5303 16.5305L21.5303 12.5305C21.8232 12.2376 21.8232 11.7627 21.5303 11.4698L17.5303 7.46979Z" fill="#818294"/>
+                                        </svg>
+                                        <span>Выйти</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cabinet-content">
+                <div class="cabinet-container">
+                    <div class="user-card">
+                        <div class="user-card-name">
+                            <div class="user-card-img">
+                                <img src="img/main/profile-image.png" alt="">
+                            </div>
+                            <div class="user-card-caption">
+                                <p>Имя не указано</p>
+                                <span class="user-card-status success">Покупатель</span>
+                            </div>
+                        </div>
+                        <div class="user-card-contact">
+                            <div class="user-card-contact-item">
+                                <div class="user-card-contact-img">
+                                    <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.1176 10.5H17.3529L19.4706 15.7941L16.8235 17.3824C17.9575 19.6816 19.8184 21.5425 22.1176 22.6765L23.7059 20.0294L29 22.1471V26.3824C29 26.944 28.7769 27.4826 28.3798 27.8798C27.9826 28.2769 27.444 28.5 26.8824 28.5C22.7522 28.249 18.8566 26.4951 15.9308 23.5692C13.0049 20.6434 11.251 16.7478 11 12.6176C11 12.056 11.2231 11.5174 11.6202 11.1202C12.0174 10.7231 12.556 10.5 13.1176 10.5" stroke="#1C6BB9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <rect x="1.25" y="0.75" width="37.5" height="37.5" rx="18.75" stroke="#1C6BB9" stroke-width="1.5"/>
+                                    </svg>
+                                </div>
+                                <div class="user-card-contact-caption">
+                                    <h6>Мой номер телефона:</h6>
+                                    <p>+7 787 454 1211</p>
+                                </div>
+                            </div>
+                            <div class="user-card-contact-item">
+                                <div class="user-card-contact-img">
+                                    <svg width="36" height="37" viewBox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.575 9.5H25.425C27.3313 9.5 28.8892 11.026 28.9943 12.9488L29 13.1562V23.8438C29 25.7934 27.5079 27.3867 25.6279 27.4942L25.425 27.5H10.575C8.66867 27.5 7.11083 25.974 7.00566 24.0512L7 23.8438V13.1562C7 11.2066 8.4921 9.61335 10.3721 9.50579L10.575 9.5H25.425H10.575ZM27.35 15.5446L18.3842 20.3716C18.1781 20.4826 17.9374 20.4985 17.7214 20.4192L17.6158 20.3716L8.65 15.5457V23.8438C8.65 24.8767 9.42782 25.7238 10.4171 25.806L10.575 25.8125H25.425C26.435 25.8125 27.2633 25.017 27.3436 24.0052L27.35 23.8438V15.5446ZM25.425 11.1875H10.575C9.56501 11.1875 8.73669 11.983 8.65638 12.9948L8.65 13.1562V13.6389L18 18.6715L27.35 13.6378V13.1562C27.35 12.1233 26.5722 11.2762 25.5829 11.194L25.425 11.1875Z" fill="#1C6BB9"/>
+                                        <rect x="0.5" y="1" width="35" height="35" rx="17.5" stroke="#1C6BB9"/>
+                                    </svg>
+                                </div>
+                                <div class="user-card-contact-caption">
+                                    <h6>Моя почта:</h6>
+                                    <p>t.toktarov@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-wrapper">
+                        <h6 class="order-wrapper-title">Мои заказы</h6>
+                        <ul class="nav nav-tabs order-nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#activeOrder">Текущий заказ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#historyOrder">История заказов</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content order-tab-content">
+                            <div class="tab-pane active" id="activeOrder">
+                                <div class="active-order">
+                                    <div class="active-order-top">
+                                        <ul class="active-order-detail">
+                                            <li>
+                                                <i class="icon icon-receipt"></i>
+                                                <div class="order-detail-caption">
+                                                    <h6>Номер заказа:</h6>
+                                                    <p>0313546876</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-history"></i>
+                                                <div class="order-detail-caption">
+                                                    <h6>Статус заказа:</h6>
+                                                    <!--'danger', 'success'-->
+                                                    <p class="info">В обработке</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-truck-gray"></i>
+                                                <div class="order-detail-caption">
+                                                    <h6>Способ доставки:</h6>
+                                                    <p>Доставка</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <i class="icon icon-pin-24"></i>
+                                                <div class="order-detail-caption">
+                                                    <h6>Адрес доставки:</h6>
+                                                    <p>г. Алматы, ул. Абая 123</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="order-tools">
+                                            <button class="btn btn-gray btn-md">Счет заказа</button>
+                                            <button class="btn btn-main btn-md">Отменить заказ</button>
+                                        </div>
+                                    </div>
+                                    <div class="active-order-body">
+                                        <div class="active-order-list">
+                                            <div class="active-order-item">
+                                                <div class="active-order-card">
+                                                    <div class="active-order-img">
+                                                        <img src="img/content/product-img.png" alt="">
+                                                    </div>
+                                                    <div class="active-order-caption">
+                                                        <div class="active-order-name">
+                                                            <h6>Ashuki 024567846</h6>
+                                                            <span>5 штук</span>
+                                                        </div>
+                                                        <div class="active-order-category">
+                                                            <p>Рулевое управление</p>
+                                                        </div>
+                                                        <div class="active-order-code">
+                                                            <div class="active-order-code-item">
+                                                                <p>ASK1421 <span>ASK1421</span></p>
+                                                            </div>
+                                                            <div class="active-order-code-item">
+                                                                <p>Код: <span>0654812</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="active-order-bottom">
+                                                            <div class="active-order-price">
+                                                                <p>5 300 тг</p>
+                                                            </div>
+                                                            <div class="active-order-shop">
+                                                                <img src="img/icon/logo.svg" alt="">
+                                                                <div class="active-order-shop-caption">
+                                                                    <h6>Магазин:</h6>
+                                                                    <p>Магазин запчастей “Адиль”</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="active-order-card">
+                                                    <div class="active-order-img">
+                                                        <img src="img/content/product-img.png" alt="">
+                                                    </div>
+                                                    <div class="active-order-caption">
+                                                        <div class="active-order-name">
+                                                            <h6>Ashuki 024567846</h6>
+                                                            <span>5 штук</span>
+                                                        </div>
+                                                        <div class="active-order-category">
+                                                            <p>Рулевое управление</p>
+                                                        </div>
+                                                        <div class="active-order-code">
+                                                            <div class="active-order-code-item">
+                                                                <p>ASK1421 <span>ASK1421</span></p>
+                                                            </div>
+                                                            <div class="active-order-code-item">
+                                                                <p>Код: <span>0654812</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="active-order-bottom">
+                                                            <div class="active-order-price">
+                                                                <p>5 300 тг</p>
+                                                            </div>
+                                                            <div class="active-order-shop">
+                                                                <img src="img/icon/logo.svg" alt="">
+                                                                <div class="active-order-shop-caption">
+                                                                    <h6>Магазин:</h6>
+                                                                    <p>Магазин запчастей “Адиль”</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="active-order-card">
+                                                    <div class="active-order-img">
+                                                        <img src="img/content/product-img.png" alt="">
+                                                    </div>
+                                                    <div class="active-order-caption">
+                                                        <div class="active-order-name">
+                                                            <h6>Ashuki 024567846</h6>
+                                                            <span>5 штук</span>
+                                                        </div>
+                                                        <div class="active-order-category">
+                                                            <p>Рулевое управление</p>
+                                                        </div>
+                                                        <div class="active-order-code">
+                                                            <div class="active-order-code-item">
+                                                                <p>ASK1421 <span>ASK1421</span></p>
+                                                            </div>
+                                                            <div class="active-order-code-item">
+                                                                <p>Код: <span>0654812</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="active-order-bottom">
+                                                            <div class="active-order-price">
+                                                                <p>5 300 тг</p>
+                                                            </div>
+                                                            <div class="active-order-shop">
+                                                                <img src="img/icon/logo.svg" alt="">
+                                                                <div class="active-order-shop-caption">
+                                                                    <h6>Магазин:</h6>
+                                                                    <p>Магазин запчастей “Адиль”</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="order-status">
+                                            <div class="order-status-date">
+                                                <h6>Приблизительный срок доставки</h6>
+                                                <p>Четверг, 15 июля</p>
+                                            </div>
+                                            <div class="order-status-steps">
+                                                <div class="order-status-step completed">
+                                                    <div class="order-status-icon-wrapper">
+                                                        <span class="order-status-icon"></span>
+                                                    </div>
+                                                    <span class="order-status-line"></span>
+                                                    <div class="order-status-caption">
+                                                        <h6>Покупка</h6>
+                                                        <p>Вторник 13.07.2022</p>
+                                                    </div>
+                                                </div>
+                                                <div class="order-status-step actual">
+                                                    <div class="order-status-icon-wrapper">
+                                                        <span class="order-status-icon"></span>
+                                                    </div>
+                                                    <span class="order-status-line"></span>
+                                                    <div class="order-status-caption">
+                                                        <h6>Обработка заказа</h6>
+                                                        <p>Вторник 13.07.2022</p>
+                                                    </div>
+                                                </div>
+                                                <div class="order-status-step">
+                                                    <div class="order-status-icon-wrapper">
+                                                        <span class="order-status-icon"></span>
+                                                    </div>
+                                                    <span class="order-status-line"></span>
+                                                    <div class="order-status-caption">
+                                                        <h6>Доставка выполняется</h6>
+                                                        <p>Вторник 13.07.2022</p>
+                                                    </div>
+                                                </div>
+                                                <div class="order-status-step">
+                                                    <div class="order-status-icon-wrapper">
+                                                        <span class="order-status-icon"></span>
+                                                    </div>
+                                                    <span class="order-status-line"></span>
+                                                    <div class="order-status-caption">
+                                                        <h6>Доставлено</h6>
+                                                        <p>Вторник 13.07.2022</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="historyOrder">
+                                <div class="history-order-list">
+                                    <div class="history-order">
+                                        <div class="history-order-item">
+                                            <div class="history-order-card">
+                                                <div class="history-order-img">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                </div>
+                                                <div class="history-order-caption">
+                                                    <div class="history-order-number">
+                                                        <p>Заказ №1231241241</p>
+                                                    </div>
+                                                    <div class="history-order-info">
+                                                        <div class="history-order-info-left">
+                                                            <div class="history-order-date">
+                                                                <p>Доставлено вторник 13.07.2022</p>
+                                                            </div>
+                                                            <div class="history-order-code">
+                                                                <div class="history-order-code-item">
+                                                                    <p>Количество: <span>15 товаров</span></p>
+                                                                </div>
+                                                                <div class="history-order-code-item">
+                                                                    <p>Цена доставки: <span>5000 тг</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="history-order-info-right">
+                                                            <div class="history-order-price">
+                                                                <h6>Итого</h6>
+                                                                <p>25 700 тг</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="history-order-card">
+                                                <div class="history-order-img">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                </div>
+                                                <div class="history-order-caption">
+                                                    <div class="history-order-number">
+                                                        <p>Заказ №1231241241</p>
+                                                    </div>
+                                                    <div class="history-order-info">
+                                                        <div class="history-order-info-left">
+                                                            <div class="history-order-date">
+                                                                <p>Доставлено вторник 13.07.2022</p>
+                                                            </div>
+                                                            <div class="history-order-code">
+                                                                <div class="history-order-code-item">
+                                                                    <p>Количество: <span>15 товаров</span></p>
+                                                                </div>
+                                                                <div class="history-order-code-item">
+                                                                    <p>Цена доставки: <span>5000 тг</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="history-order-info-right">
+                                                            <div class="history-order-price">
+                                                                <h6>Итого</h6>
+                                                                <p>25 700 тг</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="history-order-card">
+                                                <div class="history-order-img">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                    <img src="img/content/product-img.png" alt="">
+                                                </div>
+                                                <div class="history-order-caption">
+                                                    <div class="history-order-number">
+                                                        <p>Заказ №1231241241</p>
+                                                    </div>
+                                                    <div class="history-order-info">
+                                                        <div class="history-order-info-left">
+                                                            <div class="history-order-date">
+                                                                <p>Доставлено вторник 13.07.2022</p>
+                                                            </div>
+                                                            <div class="history-order-code">
+                                                                <div class="history-order-code-item">
+                                                                    <p>Количество: <span>15 товаров</span></p>
+                                                                </div>
+                                                                <div class="history-order-code-item">
+                                                                    <p>Цена доставки: <span>5000 тг</span></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="history-order-info-right">
+                                                            <div class="history-order-price">
+                                                                <h6>Итого</h6>
+                                                                <p>25 700 тг</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="history-order-detail">
+                                            <div class="order-card-sm-list">
+                                                <div class="order-card-sm-scroll">
+                                                    <div class="order-card-sm">
+                                                        <div class="order-card-sm-img">
+                                                            <img src="img/content/product-img.png" alt="">
+                                                        </div>
+                                                        <div class="order-card-sm-caption">
+                                                            <h6>Ashuki 024567846</h6>
+                                                            <p>Кол-во: 4 шт</p>
+                                                            <span>150 000 тг</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-card-sm">
+                                                        <div class="order-card-sm-img">
+                                                            <img src="img/content/product-img.png" alt="">
+                                                        </div>
+                                                        <div class="order-card-sm-caption">
+                                                            <h6>Ashuki 024567846</h6>
+                                                            <p>Кол-во: 4 шт</p>
+                                                            <span>150 000 тг</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="order-card-sm">
+                                                        <div class="order-card-sm-img">
+                                                            <img src="img/content/product-img.png" alt="">
+                                                        </div>
+                                                        <div class="order-card-sm-caption">
+                                                            <h6>Ashuki 024567846</h6>
+                                                            <p>Кол-во: 4 шт</p>
+                                                            <span>150 000 тг</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="history-order-map">
+                                                <img src="img/content/map.png" alt="">
+                                            </div>
+                                            <ul class="active-order-detail">
+                                                <li>
+                                                    <i class="icon icon-receipt"></i>
+                                                    <div class="order-detail-caption">
+                                                        <h6>Номер заказа:</h6>
+                                                        <p>0313546876</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <i class="icon icon-pin-24"></i>
+                                                    <div class="order-detail-caption">
+                                                        <h6>Адрес доставки:</h6>
+                                                        <p>г. Алматы, ул. Абая 123</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <i class="icon icon-truck-gray"></i>
+                                                    <div class="order-detail-caption">
+                                                        <h6>Способ доставки:</h6>
+                                                        <p>Доставка</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="history-order-detail-bottom">
+                                                <button class="btn btn-main btn-md">
+                                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 3.25H9.44513C8.07754 3.24998 6.97522 3.24996 6.10825 3.36652C5.20814 3.48754 4.45027 3.74643 3.84835 4.34835C3.24643 4.95027 2.98754 5.70814 2.86652 6.60825C2.74996 7.47522 2.74998 8.57754 2.75 9.94513V10V12V12.0549C2.74998 13.4225 2.74996 14.5248 2.86652 15.3918C2.98754 16.2919 3.24643 17.0497 3.84835 17.6517C4.45027 18.2536 5.20814 18.5125 6.10825 18.6335C6.97521 18.75 8.07752 18.75 9.44511 18.75H9.44511H9.44512H9.44513H9.5H15.6115C16.5852 18.75 16.9536 18.7546 17.3024 18.8369C17.6513 18.9193 17.9828 19.0799 18.8538 19.5154L21.1646 20.6708C21.3971 20.7871 21.6732 20.7746 21.8943 20.638C22.1154 20.5013 22.25 20.2599 22.25 20V10V9.94513C22.25 8.57754 22.25 7.47522 22.1335 6.60825C22.0125 5.70814 21.7536 4.95027 21.1517 4.34835C20.5497 3.74643 19.7919 3.48754 18.8918 3.36652C18.0248 3.24996 16.9225 3.24998 15.5549 3.25H15.5H9.5ZM4.90901 5.40901C5.18577 5.13225 5.57434 4.9518 6.30812 4.85315C7.06347 4.75159 8.06458 4.75 9.5 4.75H15.5C16.9354 4.75 17.9365 4.75159 18.6919 4.85315C19.4257 4.9518 19.8142 5.13225 20.091 5.40901C20.3678 5.68577 20.5482 6.07434 20.6469 6.80812C20.7484 7.56347 20.75 8.56458 20.75 10V18.7865L19.5246 18.1738L19.4454 18.1341C18.6803 17.7515 18.1864 17.5044 17.6471 17.3771C17.1077 17.2498 16.5554 17.2498 15.7 17.25L15.6115 17.25H9.5C8.06458 17.25 7.06347 17.2484 6.30812 17.1469C5.57434 17.0482 5.18577 16.8678 4.90901 16.591C4.63225 16.3142 4.4518 15.9257 4.35315 15.1919C4.25159 14.4365 4.25 13.4354 4.25 12V10C4.25 8.56458 4.25159 7.56347 4.35315 6.80812C4.4518 6.07434 4.63225 5.68577 4.90901 5.40901ZM8.5 12C9.05228 12 9.5 11.5523 9.5 11C9.5 10.4477 9.05228 10 8.5 10C7.94772 10 7.5 10.4477 7.5 11C7.5 11.5523 7.94772 12 8.5 12ZM13.5 11C13.5 11.5523 13.0523 12 12.5 12C11.9477 12 11.5 11.5523 11.5 11C11.5 10.4477 11.9477 10 12.5 10C13.0523 10 13.5 10.4477 13.5 11ZM16.5 12C17.0523 12 17.5 11.5523 17.5 11C17.5 10.4477 17.0523 10 16.5 10C15.9477 10 15.5 10.4477 15.5 11C15.5 11.5523 15.9477 12 16.5 12Z" fill="white"/>
+                                                    </svg>
+                                                    <span>Оставить отзыв</span>
+                                                </button>
+                                                <button class="btn btn-gray btn-md">
+                                                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.25 3.00012C13.25 2.58591 12.9142 2.25012 12.5 2.25012C12.0858 2.25012 11.75 2.58591 11.75 3.00012V15.1895L9.03033 12.4698C8.73744 12.1769 8.26256 12.1769 7.96967 12.4698C7.67678 12.7627 7.67678 13.2376 7.96967 13.5305L11.9697 17.5305C12.1103 17.6711 12.3011 17.7501 12.5 17.7501C12.6989 17.7501 12.8897 17.6711 13.0303 17.5305L17.0303 13.5305C17.3232 13.2376 17.3232 12.7627 17.0303 12.4698C16.7374 12.1769 16.2626 12.1769 15.9697 12.4698L13.25 15.1895V3.00012ZM8 8.25005H7.95481C6.82039 8.25003 5.9057 8.25003 5.17621 8.33227C4.42193 8.4173 3.77341 8.59813 3.21713 9.02499C2.95714 9.22449 2.72443 9.4572 2.52493 9.71719C2.09808 10.2735 1.91725 10.922 1.83221 11.6763C1.74997 12.4058 1.74999 13.3205 1.75 14.4549V14.5001V15.0001V15.0549C1.74998 16.4225 1.74996 17.5248 1.86652 18.3918C1.98754 19.2919 2.24643 20.0498 2.84835 20.6517C3.45027 21.2536 4.20814 21.5125 5.10825 21.6335C5.9752 21.7501 7.07751 21.7501 8.44507 21.7501H8.5H16.5H16.5548C17.9224 21.7501 19.0248 21.7501 19.8918 21.6335C20.7919 21.5125 21.5497 21.2536 22.1516 20.6517C22.7536 20.0498 23.0125 19.2919 23.1335 18.3918C23.25 17.5248 23.25 16.4225 23.25 15.0549V15.0001V14.5001V14.4549C23.25 13.3204 23.25 12.4058 23.1678 11.6763C23.0828 10.922 22.9019 10.2735 22.4751 9.71719C22.2756 9.4572 22.0429 9.22449 21.7829 9.02499C21.2266 8.59814 20.5781 8.4173 19.8238 8.33227C19.0943 8.25003 18.1796 8.25003 17.0452 8.25005H17.0452H17L17 9.00005L17 8.25005L16.5 8.25006C16.0858 8.25007 15.75 8.58587 15.75 9.00008C15.75 9.4143 16.0858 9.75007 16.5 9.75006L17 9.75005H17C18.1902 9.75005 19.0201 9.75117 19.6558 9.82283C20.2763 9.89278 20.6181 10.0219 20.8697 10.215C21.0257 10.3347 21.1653 10.4743 21.285 10.6303C21.4781 10.882 21.6073 11.2238 21.6772 11.8443C21.7489 12.4799 21.75 13.3098 21.75 14.5001V15.0001C21.75 16.4355 21.7484 17.4366 21.6469 18.1919C21.5482 18.9257 21.3678 19.3143 21.091 19.5911C20.8142 19.8678 20.4257 20.0483 19.6919 20.1469C18.9365 20.2485 17.9354 20.2501 16.5 20.2501H8.5C7.06458 20.2501 6.06347 20.2485 5.30812 20.1469C4.57435 20.0483 4.18577 19.8678 3.90901 19.591C3.63225 19.3143 3.4518 18.9257 3.35315 18.1919C3.25159 17.4366 3.25 16.4355 3.25 15.0001V14.5001C3.25 13.3098 3.25112 12.4799 3.32277 11.8443C3.39273 11.2238 3.52187 10.882 3.71496 10.6303C3.83466 10.4743 3.97429 10.3347 4.13028 10.215C4.38192 10.0219 4.72375 9.89278 5.34425 9.82283C5.97986 9.75117 6.80976 9.75005 7.99998 9.75005H8L8.49998 9.75006C8.91419 9.75007 9.24999 9.4143 9.25 9.00008C9.25001 8.58587 8.91424 8.25007 8.50002 8.25006L8.00002 8.25005L8 9.00005L8 8.25005Z" fill="white"/>
+                                                    </svg>
+                                                    <span>Скачать счет</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="profileSet">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content profile-modal">
+            <div class="modal-header">
+                <h5 class="modal-title">Настройка профиля</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon icon-close"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="profile-left">
+                    <ul class="nav nav-tabs profile-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#profileMain">Основные настройки</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profilePay">Платежные даные</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profilePassword">Смена пароля</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profileDelete">Удалить аккаунт</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile-right">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="profileMain">
+                            <div class="profile-content profile-main">
+                                <div class="profile-image-wrapper">
+                                    <div class="profile-image">
+                                        <img src="img/main/profile-image.png" alt="">
+                                    </div>
+                                    <button class="btn-plain profile-image-upload">
+                                        <input type="file">
+                                        <span>Загрузить фотографию</span>
+                                    </button>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Ваше имя</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="text" placeholder="Пожалуйста представьтесь">
+                                    </div>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Номер телефона</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input class="phone-mask" type="text" placeholder="Введите номер телефона">
+                                    </div>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Почта</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="email" placeholder="Введите почту">
+                                    </div>
+                                </div>
+                                <button class="btn btn-main btn-md">Сохранить</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profilePay">
+                            <div class="profile-content profile-pay">
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Имя держателя карты</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="text" placeholder="Введите имя">
+                                    </div>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Номер карты</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input class="card-mask" type="text" placeholder="Введите номер">
+                                    </div>
+                                </div>
+                                <div class="half-form">
+                                    <div class="form-group-wrapper">
+                                        <span class="form-group-title">Дата истечения срока</span>
+                                        <div class="form-group form-group-lg light">
+                                            <input class="date-mask" type="text" placeholder="Введите дату">
+                                        </div>
+                                    </div>
+                                    <div class="form-group-wrapper">
+                                        <span class="form-group-title">CVV код</span>
+                                        <div class="form-group form-group-lg light">
+                                            <input class="cvv-mask" type="text" placeholder="Введите CVV код">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-half">
+                                    <button class="btn btn-main btn-md">Добавить карту</button>
+                                    <button class="btn btn-gray btn-md">Удалить карту</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profilePassword">
+                            <div class="profile-content profile-password">
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Старый пароль</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="password">
+                                    </div>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Новый пароль</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="password">
+                                    </div>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Подтверждение пароля</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="password">
+                                    </div>
+                                </div>
+                                <button class="btn btn-main btn-md">Сохранить</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profileDelete">
+                            <div class="profile-content profile-delete">
+                                <div class="select-delete-reason">
+                                    <h6>Причина удаления аккаунта</h6>
+                                    <label class="checkbox-container">
+                                        Причина 1
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        Причина 2
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        Причина 3
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        Причина 4
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="checkbox-container">
+                                        Причина 5
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Своя причина</span>
+                                    <div class="form-group textarea-form">
+                                        <textarea rows="2"></textarea>
+                                    </div>
+                                </div>
+                                <button class="btn btn-main btn-md">Удалить аккаунт</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/libs.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+  //phone-mask
+  $(document).ready(function (){
+    $('.phone-mask').mask('+0000 000 0000');
+  });
+
+  $(document).ready(function (){
+    $('.card-mask').mask('0000 0000 0000 0000');
+  });
+
+  $(document).ready(function (){
+    $('.date-mask').mask('00/00');
+  });
+
+  $(document).ready(function (){
+    $('.cvv-mask').mask('000');
+  });
+
+
+  //автоизменение высоты textarea
+  $('a[href="#profileDelete"]').on('shown.bs.tab', function (e) {
+    const tx = document.getElementsByTagName("textarea");
+    for (let i = 0; i < tx.length; i++) {
+      tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+      tx[i].addEventListener("input", OnInput, false);
+    }
+    function OnInput() {
+      this.style.height = "auto";
+      this.style.height = (this.scrollHeight) + "px";
+    }
+  });
+
+
+  //связывающие линии статуса доставки
+  $('.order-status-step').each(function (){
+    let height = $(this).outerHeight();
+    let line = $(this).find('.order-status-line');
+    let icon = $(this).find('.order-status-icon-wrapper');
+    let iconHeight = icon.height();
+    console.log(height)
+    line.css({
+      'top': iconHeight,
+      'height': height - iconHeight,
+    })
+  });
+
+  //drag scroll "order-card-sm-list"
+  const slider = document.querySelector('.order-card-sm-list');
+  let mouseDown = false;
+  let startX, scrollLeft;
+  let startDragging = function (e) {
+    mouseDown = true;
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  };
+  let stopDragging = function (event) {
+    mouseDown = false;
+  };
+  slider.addEventListener('mousemove', (e) => {
+    e.preventDefault();
+    if(!mouseDown) { return; }
+    const x = e.pageX - slider.offsetLeft;
+    const scroll = x - startX;
+    slider.scrollLeft = scrollLeft - scroll;
+  });
+  slider.addEventListener('mousedown', startDragging, false);
+  slider.addEventListener('mouseup', stopDragging, false);
+  slider.addEventListener('mouseleave', stopDragging, false);
+
+</script>
+</body>
+</html>

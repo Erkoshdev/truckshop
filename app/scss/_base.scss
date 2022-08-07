@@ -2,10 +2,6 @@ body {
   box-sizing: border-box;
 }
 
-input[type="text"] {
-  width: 0;
-}
-
 .scroll-locked {
   height: 100vh;
   overflow-y: hidden;
@@ -32,9 +28,9 @@ a:hover, a:focus {
 .icon {
   display: inline-block;
   flex-shrink: 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-repeat: no-repeat!important;
+  background-size: contain!important;
+  background-position: center!important;
 }
 
 ul {
@@ -126,6 +122,20 @@ ul {
   display: block;
 }
 
+.btn-gray {
+  background: #818294;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.btn-gray:hover {
+  color: #FFFFFF;
+}
+
 .btn-white {
   background: #FFFFFF;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
@@ -165,6 +175,10 @@ ul {
 
 .btn-sm {
   min-height: 34px;
+}
+
+.btn-md {
+  min-height: 36px;
 }
 
 .btn-lg {
@@ -221,7 +235,6 @@ ul {
   line-height: 16px;
   color: #b9b9bf;
   border: none;
-  width: 0;
 }
 
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
@@ -268,9 +281,12 @@ input[type=number] {
   align-items: flex-start;
 }
 
+.form-group i + textarea {
+  margin-left: 12px;
+}
+
 .form-group textarea {
   background: transparent;
-  margin-left: 12px;
   flex: 1;
   border: none;
   font-weight: 400;
@@ -381,14 +397,17 @@ input[type=number] {
   .dropdown-menu {
     padding: 0;
     border: 1px solid #F5F5F5;
-    border-radius: 10px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.14);
+    border-radius: 8px;
   }
   .dropdown-item {
-    padding: 14px 10px;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 130%;
-    color: #6E7F9C;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #818294;
+
   }
   .dropdown-item.active, .dropdown-item:active, .dropdown-item.selected {
     color: #FF4D00;
@@ -396,9 +415,6 @@ input[type=number] {
   }
   .dropdown-item:hover, .dropdown-item:focus {
     background: #F5F5F5;
-  }
-  .dropdown-menu li + li {
-    border-top: 1px solid #EDEDED;
   }
 }
 

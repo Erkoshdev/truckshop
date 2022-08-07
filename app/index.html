@@ -50,15 +50,62 @@
             </svg>
             <span>Каталог товаров</span>
           </a>
-          <a href="">
+          <a class="location-link" href="" data-toggle="modal" data-target="#locationModal">
             <i class="icon icon-pin"></i>
             <span>Алматы</span>
           </a>
           <ul class="header-tools">
-            <li class="header-tools-item">
+            <li class="header-tools-item header-search">
               <button class="btn-plain search-btn">
                 <i class="icon icon-search"></i>
               </button>
+              <div class="header-search-form">
+                <div class="form-group form-group-lg light">
+                  <i class="icon icon-search-gray"></i>
+                  <input type="text" placeholder="Поиск по марке техники, по запчастям, по магазинам">
+                  <button class="btn-plain close-header-search">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="#818294"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="header-search-dropdown">
+                  <button class="btn-plain close-header-search">
+                    <i class="icon icon-close"></i>
+                  </button>
+                  <div class="search-dropdown-top">
+                    <h6 class="search-dropdown-title">Категории:</h6>
+                    <ul class="search-category-list">
+                      <li class="search-category-item">
+                        <input type="checkbox">
+                        <span class="search-category-checkbox">Фронтальные погрузчики</span>
+                      </li>
+                      <li class="search-category-item">
+                        <input type="checkbox">
+                        <span class="search-category-checkbox">Экскаваторы-погрузчики</span>
+                      </li>
+                      <li class="search-category-item">
+                        <input type="checkbox">
+                        <span class="search-category-checkbox">Погрузчики</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="search-dropdown-content">
+                    <h6 class="search-dropdown-title">Часто ищут:</h6>
+                    <ul class="search-dropdown-result-list">
+                      <li>
+                        <a href="" class="search-dropdown-result"><span>Груз</span>ики балансировочные самоклеящиеся</a>
+                      </li>
+                      <li>
+                        <a href="" class="search-dropdown-result">Стяжка крепления груза</a>
+                      </li>
+                      <li>
+                        <a href="" class="search-dropdown-result">Смазка для груза</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="header-tools-item">
               <!--"active" меняет состояние-->
@@ -1060,7 +1107,7 @@
   </div>
 </div>
 
-<div class="modal fade" id="loginModal">
+<div class="modal fade authorize-modal" id="loginModal">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="authorize-box">
@@ -1079,7 +1126,7 @@
           </div>
           <div class="authorize-toggle">
             <p>Забыли пароль?</p>
-            <a href="" class="authorize-toggle-link">Восстановление доступа</a>
+            <a href="" class="authorize-toggle-link" data-toggle="modal" data-target="#pwdModal" data-dismiss="modal">Восстановление доступа</a>
           </div>
           <div class="authorize-box-bottom">
             <button class="btn btn-main btn-lg">Войти</button>
@@ -1104,6 +1151,147 @@
     </div>
   </div>
 </div>
+<div class="modal fade authorize-modal" id="pwdModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="authorize-box">
+        <div class="authorize-box-left">
+          <div class="authorize-box-header">
+            <div class="pwd-restore-progress half">
+              <div class="pwd-restore-progress-bar"></div>
+            </div>
+            <h2>Восстановление пароля</h2>
+            <p>На номер +7 777 777 77 77 был отправлен SMS-код</p>
+          </div>
+          <div class="authorize-box-form">
+            <div class="form-group form-group-lg light">
+              <input type="number" placeholder="Полученный SMS-код">
+            </div>
+          </div>
+          <div class="resend-text">
+            <p>Отправить повторно через 30 сек</p>
+          </div>
+          <div class="authorize-box-bottom">
+            <button class="btn btn-main btn-lg" disabled>Продолжить</button>
+          </div>
+        </div>
+        <div class="authorize-box-right">
+          <button class="btn-plain close-authorize" data-dismiss="modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="white"/>
+            </svg>
+          </button>
+          <div class="registration-router">
+            <h3>Регистрация</h3>
+            <p>Чтобы воспользоваться Личным кабинетом сайта, вам требуется зарегистрироваться</p>
+            <a class="btn btn-main btn-lg" href="registration.html">Зарегистрироваться</a>
+          </div>
+          <div class="authorize-box-img">
+            <img src="img/main/login-bg.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade authorize-modal" id="restorePwdModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="authorize-box">
+        <div class="authorize-box-left">
+          <div class="authorize-box-header">
+            <div class="pwd-restore-progress full">
+              <div class="pwd-restore-progress-bar"></div>
+            </div>
+            <h2>Восстановление пароля</h2>
+            <p>Пароль необходим для входа в личный кабинет</p>
+          </div>
+          <div class="authorize-box-form">
+            <div class="form-group form-group-lg light">
+              <input type="password" placeholder="Пароль">
+            </div>
+            <div class="form-group form-group-lg light">
+              <input type="password" placeholder="Подтвердите пароль">
+            </div>
+          </div>
+          <div class="authorize-box-bottom">
+            <button class="btn btn-main btn-lg">Продолжить</button>
+          </div>
+        </div>
+        <div class="authorize-box-right">
+          <button class="btn-plain close-authorize" data-dismiss="modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="white"/>
+            </svg>
+          </button>
+          <div class="registration-router">
+            <h3>Регистрация</h3>
+            <p>Чтобы воспользоваться Личным кабинетом сайта, вам требуется зарегистрироваться</p>
+            <a class="btn btn-main btn-lg" href="registration.html">Зарегистрироваться</a>
+          </div>
+          <div class="authorize-box-img">
+            <img src="img/main/login-bg.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="locationModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button class="btn-plain close-location" data-dismiss="modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="#818294"/>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <p>Укажите из какого вы города <br>или населенного пункта</p>
+        <div class="form-group form-group-lg light">
+          <i class="icon icon-search-gray"></i>
+          <input id="locationFilter" type="text" placeholder="Город или населенный пункт">
+        </div>
+      </div>
+      <div class="modal-body">
+        <p>Выберите город</p>
+        <ul class="city-list">
+          <li>
+            <a href=""><b>Алматы</b></a>
+          </li>
+          <li>
+            <a href=""><b>Нур-Султан</b></a>
+          </li>
+          <li>
+            <a href=""><b>Шымкент</b></a>
+          </li>
+          <li>
+            <a href="">Абай</a>
+          </li>
+          <li>
+            <a href="">Абай</a>
+          </li>
+          <li>
+            <a href="">Абай</a>
+          </li>
+          <li>
+            <a href="">Абай</a>
+          </li>
+          <li>
+            <a href="">Абай</a>
+          </li>
+          <li>
+            <a href="">Абай</a>
+          </li>
+          <li>
+            <a href="">Абай</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/libs.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
@@ -1123,6 +1311,10 @@
       $('.main-search-dropdown').removeClass('show');
     }
   });
+  $('.close-main-search').click(function () {
+    $('.main-search-form input').val('');
+    $('.main-search-dropdown').removeClass('show');
+  });
 
   //offer slider
   var offerSwiper = new Swiper(".offer-slider", {
@@ -1137,6 +1329,52 @@
       pauseOnMouseEnter: true,
     }
   });
+
+  //автоизменение высоты textarea
+  const tx = document.getElementsByTagName("textarea");
+  for (let i = 0; i < tx.length; i++) {
+    tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
+    tx[i].addEventListener("input", OnInput, false);
+  }
+  function OnInput() {
+    this.style.height = "auto";
+    this.style.height = (this.scrollHeight) + "px";
+  }
+
+  //модалка выбора города
+  $(document).ready(function (){
+    $('#locationModal').modal('show')
+  })
+
+  //filter location
+  $(document).ready(function(){
+    $("#locationFilter").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      var list = $('.city-list');
+      list.find($("li")).filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+
+  //поиск в header
+  $('.search-btn').click(function (){
+    $('.header-search-form').addClass('show');
+  });
+  $('.close-header-search').click(function (){
+    $('.header-search-form').removeClass('show');
+    $('.header-search-form input').val('');
+    $('.header-search-dropdown').removeClass('show');
+  });
+
+  $('.header-search-form input').on('input', function (){
+    if($(this).val().length > 0) {
+      $('.header-search-dropdown').addClass('show');
+    } else {
+      $('.header-search-dropdown').removeClass('show');
+    }
+  });
+
 </script>
 </body>
 </html>
