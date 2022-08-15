@@ -123,246 +123,83 @@
                             <p class="cash-out-link-text">Вывести на карту</p>
                         </a>
                     </div>
-                    <div class="seller-orders-header">
-                        <h6>Ваши заказы</h6>
-                        <ul class="nav nav-tabs seller-card-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#activeOrders">
-                                    <span class="checkmark"></span>
-                                    <span>Новые</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#closedOrders">
-                                    <span class="checkmark"></span>
-                                    <span>Закрытые</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="seller-orders-content">
-                        <div class="tab-content seller-card-tab-content">
-                            <div class="tab-pane active" id="activeOrders">
-                                <div class="seller-card-list">
-                                    <div class="seller-card">
-                                        <div class="seller-card-product-list">
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <a class="seller-card-product-all">
-                                                <p>Показать все <br>товары</p>
-                                            </a>
-                                        </div>
-                                        <div class="seller-card-detail">
-                                            <div class="seller-card-detail-item">
-                                                <h6>Номер Заказа</h6>
-                                                <p>0313546876 </p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Статус Заказа</h6>
-                                                <p class="info">В обработке</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Способ доставки</h6>
-                                                <p>Доставка</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Адрес доставки</h6>
-                                                <p>г. Алматы, ул. Абая 123</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Стоимость товара</h6>
-                                                <p>100 000 тг</p>
+                    <div class="profit-wrapper">
+                        <div class="profit-header">
+                            <h6>Общие показатели</h6>
+                            <ul class="nav nav-tabs profit-nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#profitDay">За сегодня</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#profitWeek">За неделю</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#profitMonths">За месяц</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#profitYear">За год</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#profitAll">За все время</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profit-content">
+                            <div class="tab-content profit-tab-content">
+                                <div class="tab-pane active" id="profitDay">
+                                    <div class="profit-chart">
+                                        <div class="profit-chart-top">
+                                            <div class="profit-chart-index">
+                                                <div class="profit-chart-index-text">Общий  объем</div>
+                                                <div class="profit-chart-index-number">0,0 ₸</div>
                                             </div>
                                         </div>
-                                        <div class="seller-card-bottom">
-                                            <button class="btn btn-gray btn-md">Отменить заказ</button>
-                                            <button class="btn btn-main btn-md">Принять заказ</button>
-                                        </div>
-                                    </div>
-                                    <div class="seller-card">
-                                        <div class="seller-card-product-list">
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <a class="seller-card-product-all">
-                                                <p>Показать все <br>товары</p>
-                                            </a>
-                                        </div>
-                                        <div class="seller-card-detail">
-                                            <div class="seller-card-detail-item">
-                                                <h6>Номер Заказа</h6>
-                                                <p>0313546876 </p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Статус Заказа</h6>
-                                                <p class="info">В обработке</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Способ доставки</h6>
-                                                <p>Доставка</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Адрес доставки</h6>
-                                                <p>г. Алматы, ул. Абая 123</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Стоимость товара</h6>
-                                                <p>100 000 тг</p>
-                                            </div>
-                                        </div>
-                                        <div class="seller-card-bottom">
-                                            <button class="btn btn-gray btn-md">Отменить заказ</button>
-                                            <button class="btn btn-main btn-md">Принять заказ</button>
-                                        </div>
-                                    </div>
-                                    <div class="seller-card">
-                                        <div class="seller-card-product-list">
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <a class="seller-card-product-all">
-                                                <p>Показать все <br>товары</p>
-                                            </a>
-                                        </div>
-                                        <div class="seller-card-detail">
-                                            <div class="seller-card-detail-item">
-                                                <h6>Номер Заказа</h6>
-                                                <p>0313546876 </p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Статус Заказа</h6>
-                                                <p class="info">В обработке</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Способ доставки</h6>
-                                                <p>Доставка</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Адрес доставки</h6>
-                                                <p>г. Алматы, ул. Абая 123</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Стоимость товара</h6>
-                                                <p>100 000 тг</p>
-                                            </div>
-                                        </div>
-                                        <div class="seller-card-bottom">
-                                            <button class="btn btn-gray btn-md">Отменить заказ</button>
-                                            <button class="btn btn-main btn-md">Принять заказ</button>
+                                        <div class="profit-chart-body">
+
                                         </div>
                                     </div>
                                 </div>
+                                <div class="tab-pane fade" id="profitWeek">
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="profitMonths">
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="profitYear">
+                                    
+                                </div>
+                                <div class="tab-pane fade" id="profitAll">
+                                    
+                                </div>
                             </div>
-                            <div class="tab-pane fade" id="closedOrders">
-                                <div class="seller-card-list">
-                                    <div class="seller-card">
-                                        <div class="seller-card-product-list">
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <div class="seller-card-product-all">
-                                                <p>Показать все <br>товары</p>
-                                            </div>
+                            <div class="popular-products">
+                                <h6>Популярные товары <span>за все время</span></h6>
+                                <div class="popular-products-list">
+                                    <div class="popular-product-card">
+                                        <div class="popular-product-img">
+                                            <img src="img/content/product-img.png" alt="">
                                         </div>
-                                        <div class="seller-card-detail">
-                                            <div class="seller-card-detail-item">
-                                                <h6>Номер Заказа</h6>
-                                                <p>0313546876 </p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Статус Заказа</h6>
-                                                <!--классы "success", "danger"-->
-                                                <p class="danger">Отменен</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Способ доставки</h6>
-                                                <p>Доставка</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Адрес доставки</h6>
-                                                <p>г. Алматы, ул. Абая 123</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Стоимость товара</h6>
-                                                <p>100 000 тг</p>
-                                            </div>
-                                        </div>
-                                        <div class="seller-card-bottom">
-                                            <button class="btn btn-gray btn-md">Отменить заказ</button>
-                                            <button class="btn btn-main btn-md">Принять заказ</button>
+                                        <div class="popular-product-caption">
+                                            <h6>Ashuki 024567846</h6>
+                                            <p>Продано: 50 шт</p>
                                         </div>
                                     </div>
-                                    <div class="seller-card">
-                                        <div class="seller-card-product-list">
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <div class="seller-card-product">
-                                                <img src="img/content/product-img.png" alt="">
-                                                <p>Ноутбук DELL X…</p>
-                                                <span>1 шт.</span>
-                                            </div>
-                                            <div class="seller-card-product-all">
-                                                <p>Показать все <br>товары</p>
-                                            </div>
+                                    <div class="popular-product-card">
+                                        <div class="popular-product-img">
+                                            <img src="img/content/product-img.png" alt="">
                                         </div>
-                                        <div class="seller-card-detail">
-                                            <div class="seller-card-detail-item">
-                                                <h6>Номер Заказа</h6>
-                                                <p>0313546876 </p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Статус Заказа</h6>
-                                                <!--классы "success", "danger"-->
-                                                <p class="success">Доставлен</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Способ доставки</h6>
-                                                <p>Доставка</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Адрес доставки</h6>
-                                                <p>г. Алматы, ул. Абая 123</p>
-                                            </div>
-                                            <div class="seller-card-detail-item">
-                                                <h6>Стоимость товара</h6>
-                                                <p>100 000 тг</p>
-                                            </div>
+                                        <div class="popular-product-caption">
+                                            <h6>Ashuki 024567846</h6>
+                                            <p>Продано: 50 шт</p>
                                         </div>
-                                        <div class="seller-card-bottom">
-                                            <button class="btn btn-gray btn-md">Отменить заказ</button>
-                                            <button class="btn btn-main btn-md">Принять заказ</button>
+                                    </div>
+                                    <div class="popular-product-card">
+                                        <div class="popular-product-img">
+                                            <img src="img/content/product-img.png" alt="">
+                                        </div>
+                                        <div class="popular-product-caption">
+                                            <h6>Ashuki 024567846</h6>
+                                            <p>Продано: 50 шт</p>
                                         </div>
                                     </div>
                                 </div>
@@ -584,7 +421,7 @@
                                 </div>
                                 <div class="form-group-wrapper">
                                     <span class="form-group-title">Своя причина</span>
-                                    <div class="form-group textarea-form light">
+                                    <div class="form-group textarea-form">
                                         <textarea rows="2"></textarea>
                                     </div>
                                 </div>

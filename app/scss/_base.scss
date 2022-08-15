@@ -112,6 +112,7 @@ ul {
 
 .btn-main:hover {
   color: #FFFFFF;
+  background: #f4460c;
 }
 
 .btn-main span {
@@ -170,6 +171,25 @@ ul {
   font-size: 13px;
   line-height: 16px;
   color: #1B1C1E;
+  display: block;
+}
+
+.btn-danger {
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  background: #EB5757;
+  color: #FFFFFF;
+  border: none;
+}
+
+.btn-danger span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
   display: block;
 }
 
@@ -293,6 +313,7 @@ input[type=number] {
   font-size: 13px;
   line-height: 16px;
   resize: none;
+  color: #b9b9bf;
 }
 
 .form-group textarea::placeholder {
@@ -306,6 +327,10 @@ input[type=number] {
   text-overflow: ellipsis;
 }
 
+.textarea-form.light textarea {
+  color: #1E1E1E;
+}
+
 .form-group textarea:focus {
   outline: none;
 }
@@ -316,6 +341,20 @@ input[type=number] {
 
 .form-group textarea + button {
   margin-left: 12px;
+}
+
+.form-group textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+.form-group textarea::-webkit-scrollbar-track {
+  background: #DCF6FF;
+  border-radius: 6px;
+}
+
+.form-group textarea::-webkit-scrollbar-thumb {
+  background: #818294;
+  border-radius: 6px;
 }
 
 .half-form {
@@ -376,7 +415,7 @@ input[type=number] {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
   }
   .bs-placeholder {
-    color: #818294;
+    color: #818294!important;
   }
   .dropdown-toggle::after {
     content: '';
@@ -407,7 +446,6 @@ input[type=number] {
     font-size: 13px;
     line-height: 16px;
     color: #818294;
-
   }
   .dropdown-item.active, .dropdown-item:active, .dropdown-item.selected {
     color: #FF4D00;

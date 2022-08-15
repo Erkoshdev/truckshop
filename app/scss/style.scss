@@ -62,6 +62,10 @@
   transition: 0.2s ease;
 }
 
+.catalog-link span {
+  margin-left: 10px;
+}
+
 .catalog-link.active {
   border: 1px solid #F5750C;
   background: transparent;
@@ -181,7 +185,7 @@
   justify-content: center;
 }
 
-.basket-link span {
+.basket-link span:not(.menu-text-xs) {
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
@@ -523,8 +527,13 @@
   transform: translateY(-50%);
   width: 100%;
   height: 100%;
-  object-fit: cover;
   z-index: 1;
+}
+
+.offer-slider-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .section-header {
@@ -586,6 +595,8 @@
   padding: 24px;
   display: flex;
   flex-direction: column;
+  z-index: 2;
+  position: relative;
 }
 
 .service-box-icon {
@@ -627,7 +638,7 @@
 }
 
 .service-box.bg-light {
-  background: #F0FBFF;
+  background: #F0FBFF!important;
   .service-box-caption {
     padding-right: 30px;
   }
@@ -929,13 +940,13 @@
   left: 0;
 }
 
-.seller-list {
+.top-seller-list {
   display: flex;
   flex-wrap: wrap;
   margin: -5px;
 }
 
-.seller-card {
+.top-seller-card {
   width: calc(20% - 10px);
   background: #FFFFFF;
   border: 1px solid #F1F1F1;
@@ -946,7 +957,7 @@
   position: relative;
 }
 
-.seller-card-img {
+.top-seller-card-img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
@@ -954,17 +965,17 @@
   margin: 0 auto;
 }
 
-.seller-card-img img {
+.top-seller-card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.seller-card-caption {
+.top-seller-card-caption {
   margin-top: 12px;
 }
 
-.seller-card-caption h6 {
+.top-seller-card-caption h6 {
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
@@ -993,18 +1004,18 @@
   color: #F5750C;
 }
 
-.seller-card-caption .rating {
+.top-seller-card-caption .rating {
   margin: 6px;
   justify-content: center;
 }
 
-.seller-card-review {
+.top-seller-card-review {
   margin-top: 6px;
   display: flex;
   justify-content: center;
 }
 
-.seller-card-review p {
+.top-seller-card-review p {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -4273,6 +4284,10 @@
   width: calc(50%);
 }
 
+#productAdd .modal-dialog {
+  max-width: 768px;
+}
+
 #productEdit .product-edit-modal-tools .btn {
   width: calc(33.3%);
 }
@@ -4294,6 +4309,154 @@
   width: 24px;
   height: 24px;
 }
+
+.profit-wrapper {
+  margin-top: 24px;
+}
+
+.profit-wrapper h6 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #818294;
+}
+
+.profit-nav-tabs {
+  display: flex;
+  border: none;
+  margin-top: 16px;
+}
+
+.profit-nav-tabs .nav-item + .nav-item {
+  margin-left: 8px;
+}
+
+.profit-nav-tabs .nav-link {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1B1C1E;
+}
+
+.profit-nav-tabs .nav-link.active {
+  background: #F5750C;
+  color: #FFFFFF;
+}
+
+.profit-content {
+  margin-top: 16px;
+  display: flex;
+}
+
+.profit-tab-content {
+  width: 72%;
+}
+
+.profit-chart {
+  background: #FFFFFF;
+  border: 1px solid #F1F1F1;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  width: 100%;
+  height: 285px;
+  padding: 24px;
+}
+
+.popular-products {
+  width: 28%;
+  margin-left: 8px;
+  background: #FFFFFF;
+  border: 1px solid #F1F1F1;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 24px 16px;
+}
+
+.popular-products h6 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #818294;
+}
+
+.popular-products h6 span {
+  color: #1C6BB9;
+}
+
+.popular-products-list {
+  margin-top: 13px;
+}
+
+.popular-product-card {
+  background: #FFFFFF;
+  border: 1px solid #F1F1F1;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.popular-product-card + .popular-product-card {
+  margin-top: 13px;
+}
+
+.popular-product-img {
+  width: 55px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.popular-product-img img {
+  width: 100%;
+  height: auto;
+  max-height: 45px;
+  object-fit: contain;
+}
+
+.popular-product-caption {
+  flex: 1;
+  margin-left: 4px;
+}
+
+.popular-product-caption h6 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1B1C1E;
+}
+
+.popular-product-caption p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #818294;
+  margin-top: 4px;
+}
+
+.header-xs {
+  display: none;
+}
+
+.header-search-xs {
+  display: none;
+}
+
+.menu-text-xs {
+  display: none;
+}
+
+.icon-wrapper-xs {
+  display: flex;
+  height: fit-content;
+}
+
+
+
 
 
 
