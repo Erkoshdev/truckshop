@@ -28,6 +28,11 @@
             <div class="search-content">
                 <div class="search-left">
                     <div class="filter">
+                        <button class="btn-plain close-filter close-search-filter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="#818294"/>
+                            </svg>
+                        </button>
                         <h6 class="filter-title">Фильтр</h6>
                         <div class="filter-item">
                             <h6 class="filter-item-title">Наличие в магазинах</h6>
@@ -204,10 +209,27 @@
                             </div>
                         </div>
                         <button class="btn btn-main btn-lg">Сбросить настройки</button>
+                        <button class="btn btn-main btn-lg close-filter">Закрыть фильтр</button>
                     </div>
                 </div>
                 <div class="search-right">
-                    <h2 class="section-title">Двигатели</h2>
+                    <div class="search-right-header">
+                        <h2 class="section-title">Двигатели</h2>
+                        <button class="btn btn-stroke btn-lg toggle-search-filter">
+                            <span>Фильтр</span>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.5 6V3" stroke="#1B1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.5 21V10" stroke="#1B1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.5 14V3" stroke="#1B1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.5 21V18" stroke="#1B1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.5 6V3" stroke="#1B1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.5 21V10" stroke="#1B1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.91422 6.58579C7.69527 7.36684 7.69527 8.63317 6.91422 9.41422C6.13317 10.1953 4.86684 10.1953 4.08579 9.41422C3.30474 8.63317 3.30474 7.36684 4.08579 6.58579C4.86684 5.80474 6.13317 5.80474 6.91422 6.58579" stroke="#1B1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.9142 14.5858C14.6953 15.3668 14.6953 16.6332 13.9142 17.4142C13.1332 18.1953 11.8668 18.1953 11.0858 17.4142C10.3047 16.6332 10.3047 15.3668 11.0858 14.5858C11.8668 13.8047 13.1332 13.8047 13.9142 14.5858" stroke="#1B1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M20.9142 6.58579C21.6953 7.36684 21.6953 8.63317 20.9142 9.41422C20.1332 10.1953 18.8668 10.1953 18.0858 9.41422C17.3047 8.63317 17.3047 7.36684 18.0858 6.58579C18.8668 5.80474 20.1332 5.80474 20.9142 6.58579" stroke="#1B1C1E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
                     <div class="search-banner">
                         <img src="img/content/oil-banner.png" alt="">
                         <span class="search-banner-link">Перейти</span>
@@ -782,6 +804,7 @@
         </div>
     </div>
 </div>
+<div class="overlay"></div>
 
 <script src="js/libs.min.js"></script>
 <script src="js/bootstrap-select.min.js"></script>
@@ -803,6 +826,39 @@
   $('.select-form').on('changed.bs.select', function (e) {
     $(this).prevAll('.dropdown-toggle').toggleClass('bs-placeholder', this.value === '');
   }).trigger('changed.bs.select');
+
+
+  //фильтр в моб устройствах
+  let isFilterOpen = 0;
+  $('.toggle-search-filter').click(function (){
+    if(isFilterOpen == 0) {
+      isFilterOpen = 1;
+      $('.search-left').addClass('show');
+      $('body').addClass('scroll-locked');
+      $('.overlay').addClass('show');
+    } else {
+      isFilterOpen = 0;
+      $('.search-left').removeClass('show');
+      $('body').removeClass('scroll-locked');
+      $('.overlay').removeClass('show');
+    }
+  });
+  $(document).mouseup(function(e) {
+    var container = $(".search-left");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      isFilterOpen = 0;
+      container.removeClass('show');
+      $('body').removeClass('scroll-locked');
+      $('.overlay').removeClass('show');
+    }
+  });
+  $('.close-filter').click(function (){
+    isFilterOpen = 0;
+    $('.search-left').removeClass('show');
+    $('body').removeClass('scroll-locked');
+    $('.overlay').removeClass('show');
+  })
+
 </script>
 </body>
 </html>

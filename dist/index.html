@@ -196,6 +196,11 @@
             <span>Вход / Регистрация</span>
           </a>
           <div class="catalog">
+            <button class="btn-plain close-catalog">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="#818294"/>
+              </svg>
+            </button>
             <div class="catalog-inner">
               <ul class="nav nav-tabs catalog-nav-tabs">
                 <li class="nav-item catalog-nav-item">
@@ -555,7 +560,7 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Популярные товары в Алматы</h2>
-          <a href="" class="btn btn-stroke btn-lg">Посмотреть все товары</a>
+          <a href="" class="btn btn-stroke btn-lg section-more-link">Посмотреть все товары</a>
         </div>
         <div class="product-list four-column">
           <div class="product-card">
@@ -879,13 +884,14 @@
             </div>
           </div>
         </div>
+        <a href="" class="btn btn-stroke btn-lg section-more-link-xs">Посмотреть все товары</a>
       </div>
     </div>
     <div class="section top-sellers">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Топ 5 продавцов</h2>
-          <a href="" class="btn btn-stroke btn-lg">Посмотреть все магазины</a>
+          <a href="" class="btn btn-stroke btn-lg section-more-link">Посмотреть все магазины</a>
         </div>
         <div class="top-seller-list">
           <div class="top-seller-card">
@@ -974,13 +980,14 @@
             <a href="" class="absolute-link"></a>
           </div>
         </div>
+        <a href="" class="btn btn-stroke btn-lg section-more-link-xs">Посмотреть все магазины</a>
       </div>
     </div>
     <div class="section news">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Новости</h2>
-          <a href="" class="btn btn-stroke btn-lg">Все новости</a>
+          <a href="" class="btn btn-stroke btn-lg section-more-link">Все новости</a>
         </div>
         <div class="news-list">
           <div class="news-card">
@@ -1024,6 +1031,7 @@
             <a href="" class="absolute-link"></a>
           </div>
         </div>
+        <a href="" class="btn btn-stroke btn-lg section-more-link-xs">Все новости</a>
       </div>
 
     </div>
@@ -1098,12 +1106,12 @@
   <div class="footer">
     <div class="container-lg">
       <div class="row">
-        <div class="col-2">
+        <div class="col-xl-2">
           <a href="index.html" class="footer-logo">
             <img src="img/logo/footer-logo.svg" alt="">
           </a>
         </div>
-        <div class="col-10">
+        <div class="col-xl-10">
           <div class="footer-top">
             <ul class="footer-nav">
               <li class="footer-nav-item">
@@ -1165,11 +1173,11 @@
                 </div>
               </form>
             </div>
-            <div class="copyright">
-              <p>Copyright 2022</p>
-            </div>
           </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2022</p>
       </div>
     </div>
   </div>
@@ -1180,13 +1188,18 @@
     <div class="modal-content">
       <div class="authorize-box">
         <div class="authorize-box-left">
+          <button class="btn-plain close-authorize close-authorize-xs" data-dismiss="modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="#818294"/>
+            </svg>
+          </button>
           <div class="authorize-box-header">
             <h2>Авторизация</h2>
             <p>Чтобы воспользоваться Личным кабинетом сайта, вам требуется войти под своей учетной записью.</p>
           </div>
           <div class="authorize-box-form">
             <div class="form-group form-group-lg light">
-              <input class="phone-mask" type="number" placeholder="Введите телефон">
+              <input class="phone-mask" type="text" placeholder="Введите телефон">
             </div>
             <div class="form-group form-group-lg light">
               <input type="password" placeholder="Введите пароль">
@@ -1224,6 +1237,11 @@
     <div class="modal-content">
       <div class="authorize-box">
         <div class="authorize-box-left">
+          <button class="btn-plain close-authorize close-authorize-xs" data-dismiss="modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="#818294"/>
+            </svg>
+          </button>
           <div class="authorize-box-header">
             <div class="pwd-restore-progress half">
               <div class="pwd-restore-progress-bar"></div>
@@ -1267,6 +1285,11 @@
     <div class="modal-content">
       <div class="authorize-box">
         <div class="authorize-box-left">
+          <button class="btn-plain close-authorize close-authorize-xs" data-dismiss="modal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.46967 5.46967C5.76256 5.17678 6.23744 5.17678 6.53033 5.46967L12 10.9393L17.4697 5.46967C17.7626 5.17678 18.2374 5.17678 18.5303 5.46967C18.8232 5.76256 18.8232 6.23744 18.5303 6.53033L13.0607 12L18.5303 17.4697C18.8232 17.7626 18.8232 18.2374 18.5303 18.5303C18.2374 18.8232 17.7626 18.8232 17.4697 18.5303L12 13.0607L6.53033 18.5303C6.23744 18.8232 5.76256 18.8232 5.46967 18.5303C5.17678 18.2374 5.17678 17.7626 5.46967 17.4697L10.9393 12L5.46967 6.53033C5.17678 6.23744 5.17678 5.76256 5.46967 5.46967Z" fill="#818294"/>
+            </svg>
+          </button>
           <div class="authorize-box-header">
             <div class="pwd-restore-progress full">
               <div class="pwd-restore-progress-bar"></div>
@@ -1305,8 +1328,6 @@
     </div>
   </div>
 </div>
-
-
 <div class="modal fade" id="locationModal">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -1368,7 +1389,7 @@
 <script>
   //phone-mask
   $(document).ready(function (){
-    $('.phone-mask').mask('+0000 000 0000');
+    $('.phone-mask').mask('+7000 000 0000');
   });
 
   //main-search
@@ -1391,11 +1412,11 @@
     centeredSlides: true,
     loop: true,
     speed: 800,
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    //   pauseOnMouseEnter: true,
-    // }
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    }
   });
 
   //автоизменение высоты textarea
@@ -1425,44 +1446,7 @@
     });
   });
 
-  //поиск в header
-  $('.search-btn').click(function (){
-    $('.header-search-form').addClass('show');
-  });
-  $('.close-header-search').click(function (){
-    $('.header-search-form').removeClass('show');
-    $('.header-search-form input').val('');
-    $('.header-search-dropdown').removeClass('show');
-  });
 
-  $('.header-search-form input').on('input', function (){
-    if($(this).val().length > 0) {
-      $('.header-search-dropdown').addClass('show');
-    } else {
-      $('.header-search-dropdown').removeClass('show');
-    }
-  });
-
-  //поиск в мобильном header
-  $('.close-search-xs').click(function (){
-    $('.search-xs-form').removeClass('show');
-    $('.search-xs-form input').val('');
-    $('.search-xs-dropdown').removeClass('show');
-  });
-
-  $('.search-xs-form input').on('input', function (){
-    if($(this).val().length > 0) {
-      $('.search-xs-dropdown').addClass('show');
-    } else {
-      $('.search-xs-dropdown').removeClass('show');
-    }
-  });
-
-  //меню header в мобилке
-  $('.header-row-toggle').click(function (){
-    $(this).toggleClass('active');
-    $('.header-main-row').toggleClass('show')
-  })
 
 </script>
 </body>
