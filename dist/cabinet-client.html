@@ -17,48 +17,60 @@
             </a>
         </div>
         <div class="cabinet-wrapper">
-            <!--<div class="cabinet-header">
+            <div class="cabinet-header">
                 <div class="cabinet-container">
                     <div class="cabinet-header-row">
-                        <ul class="cabinet-header-nav">
-                            <li>
-                                <a href="">Информация для продавцов</a>
-                            </li>
-                            <li>
-                                <a href="">Информация для покупателей</a>
-                            </li>
-                            <li>
-                                <a href="">Услуги</a>
-                            </li>
-                            <li>
-                                <a href="">Акции</a>
-                            </li>
-                            <li>
-                                <a href="">О компании</a>
-                            </li>
-                            <li>
-                                <a href="">Контакты</a>
-                            </li>
-                        </ul>
+                        <a href="" class="cabinet-logo-xs">
+                            <img src="img/logo/client-logo.svg" alt="">
+                        </a>
+                        <div class="cabinet-header-nav-wrapper">
+                            <button class="btn-plain toggle-cabinet-header-nav">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                            <ul class="cabinet-header-nav">
+                                <li>
+                                    <a href="">Информация для продавцов</a>
+                                </li>
+                                <li>
+                                    <a href="">Информация для покупателей</a>
+                                </li>
+                                <li>
+                                    <a href="">Услуги</a>
+                                </li>
+                                <li>
+                                    <a href="">Акции</a>
+                                </li>
+                                <li>
+                                    <a href="">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="cabinet-header-tools">
                             <a href="" class="cabinet-header-messages">
                                 <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M18 4.032V11.1562C18 12.6727 16.7792 13.9118 15.241 13.9955L15.075 14H2.925C1.36527 14 0.0906787 12.8131 0.00463035 11.3176L0 11.1562V4.032L8.6868 8.45633C8.88296 8.55622 9.11704 8.55622 9.3132 8.45633L18 4.032ZM2.925 0H15.075C16.5913 0 17.8381 1.12167 17.9854 2.5581L9 7.13417L0.0145725 2.5581C0.156475 1.17487 1.31789 0.0835187 2.75768 0.00457495L2.925 0H15.075H2.925Z" fill="#818294"/>
                                 </svg>
-                                Сообщения
+                                <span class="cabinet-header-messages-text">Сообщения</span>
                                 <span class="notice-number">2</span>
                             </a>
                             <div class="dropdown profile-dropdown">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <rect width="30" height="30" rx="15" fill="url(#pattern0)"/>
-                                    <defs>
-                                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                                            <use xlink:href="#image0_138_2045" transform="scale(0.005)"/>
-                                        </pattern>
-                                        <image id="image0_138_2045" width="200" height="200" xlink:href="data:image/png;base64,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"/>
-                                    </defs>
-                                </svg>
-                                <button class="dropdown-toggle" data-toggle="dropdown">Мой профиль</button>
+                                <button class="dropdown-toggle" data-toggle="dropdown">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="30" height="30" rx="15" fill="url(#pattern0)"/>
+                                        <defs>
+                                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0_138_2045" transform="scale(0.005)"/>
+                                            </pattern>
+                                            <image id="image0_138_2045" width="200" height="200" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                    </svg>
+                                    <span class="profile-dropdown-text">Мой профиль</span>
+                                </button>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" type="button" href="#" data-toggle="modal" data-target="#profileSet">
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-            </div>-->
+            </div>
             <div class="cabinet-content">
                 <div class="cabinet-container">
                     <div class="user-card">
@@ -131,37 +143,39 @@
                             <div class="tab-pane active" id="activeOrder">
                                 <div class="active-order">
                                     <div class="active-order-top">
-                                        <ul class="active-order-detail">
-                                            <li>
-                                                <i class="icon icon-receipt"></i>
-                                                <div class="order-detail-caption">
-                                                    <h6>Номер заказа:</h6>
-                                                    <p>0313546876</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-history"></i>
-                                                <div class="order-detail-caption">
-                                                    <h6>Статус заказа:</h6>
-                                                    <!--'danger', 'success'-->
-                                                    <p class="info">В обработке</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-truck-gray"></i>
-                                                <div class="order-detail-caption">
-                                                    <h6>Способ доставки:</h6>
-                                                    <p>Доставка</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <i class="icon icon-pin-24"></i>
-                                                <div class="order-detail-caption">
-                                                    <h6>Адрес доставки:</h6>
-                                                    <p>г. Алматы, ул. Абая 123</p>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <div class="active-order-detail-wrapper">
+                                            <ul class="active-order-detail">
+                                                <li>
+                                                    <i class="icon icon-receipt"></i>
+                                                    <div class="order-detail-caption">
+                                                        <h6>Номер заказа:</h6>
+                                                        <p>0313546876</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <i class="icon icon-history"></i>
+                                                    <div class="order-detail-caption">
+                                                        <h6>Статус заказа:</h6>
+                                                        <!--'danger', 'success'-->
+                                                        <p class="info">В обработке</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <i class="icon icon-truck-gray"></i>
+                                                    <div class="order-detail-caption">
+                                                        <h6>Способ доставки:</h6>
+                                                        <p>Доставка</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <i class="icon icon-pin-24"></i>
+                                                    <div class="order-detail-caption">
+                                                        <h6>Адрес доставки:</h6>
+                                                        <p>г. Алматы, ул. Абая 123</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
                                         <div class="order-tools">
                                             <button class="btn btn-gray btn-md">Счет заказа</button>
                                             <button class="btn btn-main btn-md">Отменить заказ</button>
@@ -546,7 +560,7 @@
     </div>
 </div>
 
-<div class="modal fade " id="profileSet">
+<div class="modal fade profile-set-modal client-profile" id="profileSet">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content profile-modal">
             <div class="modal-header">
@@ -748,7 +762,6 @@
     let line = $(this).find('.order-status-line');
     let icon = $(this).find('.order-status-icon-wrapper');
     let iconHeight = icon.height();
-    console.log(height)
     line.css({
       'top': iconHeight,
       'height': height - iconHeight,
@@ -778,6 +791,26 @@
   slider.addEventListener('mouseup', stopDragging, false);
   slider.addEventListener('mouseleave', stopDragging, false);
 
+  //показать/скрыть header-nav в мобильных устр
+  $('.toggle-cabinet-header-nav').click(function (){
+    if($(window).width() > 768) {
+      $(this).toggleClass('active');
+      if($(this).hasClass('active')) {
+        $('.cabinet-header-nav').addClass('show')
+      } else  {
+        $('.cabinet-header-nav').removeClass('show')
+      }
+    } else {
+      $(this).toggleClass('active');
+      if($(this).hasClass('active')) {
+        $('.cabinet-header-nav').addClass('show');
+        $('body').addClass('scroll-locked');
+      } else  {
+        $('.cabinet-header-nav').removeClass('show');
+        $('body').removeClass('scroll-locked');
+      }
+    }
+  })
 </script>
 </body>
 </html>

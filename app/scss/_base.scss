@@ -25,6 +25,11 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+input {
+  min-width: 0;
+}
+
+
 .icon {
   display: inline-block;
   flex-shrink: 0;
@@ -395,7 +400,7 @@ input[type=number] {
   margin-top: 8px;
 }
 
-.third-form .select-form {
+.third-form .bootstrap-select {
   width: calc(33.33% - 16px)!important;
   margin-left: 8px;
   margin-right: 8px;
