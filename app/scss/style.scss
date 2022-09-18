@@ -1704,11 +1704,14 @@
 
 .product-detail-delivery span {
   display: block;
-  margin-left: 8px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #F5750C;
+}
+
+.product-detail-delivery i + span {
+  margin-left: 8px;
 }
 
 .product-detail-info {
@@ -4599,6 +4602,304 @@
 
 .cabinet-logo-xs {
   display: none;
+}
+
+.order-edit .form-group-title {
+  display: flex;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1B1C1E;
+  margin-bottom: 8px;
+}
+
+.order-edit .form-group-title span {
+  color: #EB5757;
+  margin-left: 5px;
+}
+
+.order-edit .form-group-wrapper {
+  margin-bottom: 16px;
+}
+
+.order-edit .form-group {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F1F1F1;
+}
+
+.order-edit .bootstrap-select {
+  width: 100%!important;
+}
+
+.order-edit .bootstrap-select .dropdown-toggle {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  border: 1px solid #F1F1F1;
+}
+
+.user-order-wrapper {
+  display: flex;
+}
+
+.order-edit {
+  width: 56%;
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.order-edit-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1B1C1E;
+}
+
+.delivery-nav-tabs {
+  margin-top: 16px;
+}
+
+#pickup .form-group-wrapper {
+  margin-bottom: 24px;
+}
+
+.order-edit-btn {
+  width: 100%;
+}
+
+.order-preview {
+  width: 44%;
+  margin-left: 24px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 40px;
+  height: fit-content;
+}
+
+.order-preview-card {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.order-preview-card-img {
+  width: 125px;
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.order-preview-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.order-preview-card-caption {
+  margin-left: 24px;
+  flex: 1;
+}
+
+.order-preview-card-caption h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1B1C1E;
+}
+
+.order-preview-card-caption p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #F5750C;
+  margin-top: 6px;
+}
+
+.order-preview-card-caption span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1B1C1E;
+  display: block;
+  margin-top: 6px;
+}
+
+.order-preview-card + .order-preview-card {
+  border-top: 1px solid #F1F1F1;
+}
+
+.order-preview-cash {
+  margin-top: 40px;
+}
+
+.order-preview-cash h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #1B1C1E;
+  margin-bottom: 12px;
+}
+
+.order-preview-cash-item {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-preview-cash-item p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 130%;
+  color: #818294;
+  width: 70%;
+}
+
+.order-preview-cash-item span {
+  display: block;
+  text-align: right;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 130%;
+  color: #1B1C1E;
+  width: 30%;
+}
+
+.order-preview-cash-item + .order-preview-cash-item {
+  border-top: 1px solid #F1F1F1;
+}
+
+.order-preview-cash-item.total span {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.support {
+  position: fixed;
+  bottom: 40px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.support-item {
+  display: flex;
+  align-items: center;
+  padding: 6px 30px;
+  border-radius: 23px;
+  min-height: 36px;
+  transition: 0.2s ease;
+}
+
+.support-item span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  display: block;
+}
+
+.support-item svg + span {
+  margin-left: 10px;
+}
+
+.support-item.hotline {
+  background: #1C6BB9;
+}
+
+.support-item.whatsapp {
+  background: #6FCF97;
+}
+
+.support-item + .support-item {
+  margin-left: 8px;
+}
+
+.support-item.whatsapp:hover {
+  background: #63b786;
+}
+
+.support-item.hotline:hover {
+  background: #11589b;
+}
+
+.client-pay-form {
+  margin-top: 16px;
+}
+
+#requestModal .modal-dialog {
+  width: 850px;
+  max-width: 850px;
+}
+
+#requestModal .modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 70px 215px;
+  position: relative;
+}
+
+.request-modal-title h6 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  color: #1B1C1E;
+}
+
+.request-modal-title p {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+  text-align: center;
+  color: #818294;
+  margin-top: 8px;
+}
+
+.request-form {
+  margin-top: 24px;
+}
+
+.request-form .form-group {
+  border: 1px solid #F1F1F1;
+}
+
+.request-form .btn-main {
+  width: 100%;
+}
+
+.request-form textarea {
+  min-height: 36px;
+}
+
+.success-modal .modal-dialog {
+  width: 850px;
+  max-width: 850px;
+}
+
+.success-modal .modal-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 70px 215px;
+  position: relative;
+}
+
+.success-modal .modal-content svg {
+  margin: 0 auto;
+}
+
+.success-modal .btn-main {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.success-modal h6 {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 130%;
+  text-align: center;
+  color: #1B1C1E;
 }
 
 
