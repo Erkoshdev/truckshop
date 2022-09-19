@@ -124,693 +124,103 @@
             </div>
             <div class="cabinet-content">
                 <div class="cabinet-container">
-                    <ul class="nav nav-tabs product-nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#autoParts">Автозапчасти</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#specialEquipment">Спецтехника</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content product-tab-content">
-                        <div class="tab-pane active" id="autoParts">
-                            <div class="seller-products-header">
-                                <h6>Выберите магазин</h6>
-                                <div class="seller-products-tools">
-                                    <ul class="nav nav-tabs shop-nav-tabs">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="tab" href="#partsShop1">г. Алматы, ул. Абая 123</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#partsShop2">г. Алматы, ул. Абая 123</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#partsShop3">г. Алматы, ул. Абая 123</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#partsShop4">г. Алматы, ул. Абая 123</a>
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-gray btn-md product-add" data-toggle="modal" data-target="#productAdd">Добавить товар</button>
+                    <div class="seller-products-header">
+                        <h6>Выберите магазин</h6>
+                        <div class="seller-products-tools">
+                            <ul class="nav nav-tabs shop-nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#partsShop1">г. Алматы, ул. Абая 123</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#partsShop2">г. Алматы, ул. Абая 123</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#partsShop3">г. Алматы, ул. Абая 123</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#partsShop4">г. Алматы, ул. Абая 123</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="seller-products-content">
+                        <div class="product-add-img">
+                            <button class="btn-plain product-add-img-btn">
+                                <input type="file">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 12C3.75 7.44365 7.44365 3.75 12 3.75C16.5563 3.75 20.25 7.44365 20.25 12C20.25 16.5563 16.5563 20.25 12 20.25C7.44365 20.25 3.75 16.5563 3.75 12ZM12 2.25C6.61522 2.25 2.25 6.61522 2.25 12C2.25 17.3848 6.61522 21.75 12 21.75C17.3848 21.75 21.75 17.3848 21.75 12C21.75 6.61522 17.3848 2.25 12 2.25ZM12.75 8C12.75 7.58579 12.4142 7.25 12 7.25C11.5858 7.25 11.25 7.58579 11.25 8V11.25H7.99997C7.58576 11.25 7.24997 11.5858 7.24997 12C7.24997 12.4142 7.58576 12.75 7.99997 12.75H11.25V16C11.25 16.4142 11.5858 16.75 12 16.75C12.4142 16.75 12.75 16.4142 12.75 16V12.75H16C16.4142 12.75 16.75 12.4142 16.75 12C16.75 11.5858 16.4142 11.25 16 11.25H12.75V8Z" fill="white"/>
+                                </svg>
+                                <span>Загрузить фото спецтехники</span>
+                            </button>
+                            <img src="img/content/truck-white.png" alt="">
+                            <img src="img/content/truck-white.png" alt="">
+                            <img src="img/content/truck-white.png" alt="">
+                        </div>
+                        <div class="product-add-form">
+                            <div class="half-form">
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Название товара</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="text" placeholder="Введите название">
+                                    </div>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Категория</span>
+                                    <select class="select-form form-group-lg light"  title="Выберите категорию товара" multiple>
+                                        <option>select option</option>
+                                        <option>select option</option>
+                                        <option>select option</option>
+                                        <option>select option</option>
+                                        <option>select option</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="seller-products-content">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="partsShop1">
-                                        <div class="product-list four-column">
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn" data-toggle="modal" data-target="#productEdit">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="partsShop2">
-                                        <div class="product-list four-column">
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="partsShop3">
-                                        <div class="product-list four-column">
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="partsShop4">
-                                        <div class="product-list four-column">
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="third-form">
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Осталось штук</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="text" placeholder="Введите количество">
                                     </div>
                                 </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Артикул</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="text" placeholder="Введите артикул">
+                                    </div>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Код</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="text" placeholder="Введите код">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="half-form">
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Цена</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="number" placeholder="Введите цену">
+                                    </div>
+                                </div>
+                                <div class="form-group-wrapper">
+                                    <span class="form-group-title">Магазин по адресу</span>
+                                    <div class="form-group form-group-lg light">
+                                        <input type="text" placeholder="Выберите адрес магазина">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group-wrapper">
+                                <span class="form-group-title">Описание</span>
+                                <div class="form-group form-group-lg light textarea-form">
+                                    <textarea rows="7" placeholder="Введите описание"></textarea>
+                                </div>
+                            </div>
+                            <div class="product-edit-modal-tools">
+                                <button class="btn btn-gray btn-md">Отменить</button>
+                                <button class="btn btn-main btn-md">Опубликовать товар</button>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="specialEquipment">
-                            <div class="seller-products-header">
-                                <h6>Выберите магазин</h6>
-                                <div class="seller-products-tools">
-                                    <ul class="nav nav-tabs shop-nav-tabs">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" data-toggle="tab" href="#equipmentShop1">г. Алматы, ул. Абая 123</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#equipmentShop2">г. Алматы, ул. Абая 123</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#equipmentShop3">г. Алматы, ул. Абая 123</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#equipmentShop4">г. Алматы, ул. Абая 123</a>
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-gray btn-md product-add" data-toggle="modal" data-target="#productAdd">Добавить товар</button>
-                                </div>
-                            </div>
-                            <div class="seller-products-content">
-                                <div class="tab-content">
-                                    <div class="tab-pane active" id="equipmentShop1">
-                                        <div class="product-list four-column">
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn" data-toggle="modal" data-target="#productEdit">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="equipmentShop2">
-                                        <div class="product-list four-column">
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="equipmentShop3">
-                                        <div class="product-list four-column">
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="equipmentShop4">
-                                        <div class="product-list four-column">
-                                            <div class="product-card seller-product-card">
-                                                <button class="btn-plain product-delete">
-                                                    <i class="icon icon-close"></i>
-                                                </button>
-                                                <div class="product-card-img">
-                                                    <img src="img/content/product-img.png" alt="">
-                                                </div>
-                                                <div class="product-card-caption">
-                                                    <div class="product-name">
-                                                        <p>Ashuki 024567846</p>
-                                                    </div>
-                                                    <div class="product-category">
-                                                        <p>Рулевое управление</p>
-                                                    </div>
-                                                    <div class="product-detail">
-                                                        <div class="product-detail-item">
-                                                            <p>Арт:</p>
-                                                            <span>ASK1421</span>
-                                                        </div>
-                                                        <div class="product-detail-item">
-                                                            <p>Код:</p>
-                                                            <span>0654812</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="product-card-price">
-                                                    <p>от 150 000 тг</p>
-                                                    <a href="" class="btn btn-main btn-sm product-card-btn">
-                                                        <i class="icon icon-edit"></i>
-                                                        <span>Редактировать товар</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
