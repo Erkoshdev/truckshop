@@ -228,6 +228,9 @@
   .product-list.four-column .product-card {
     width: calc(33.3% - 8px);
   }
+  .profile-img {
+    height: 200px;
+  }
 
 }
 
@@ -571,6 +574,7 @@
   }
   .seller-card {
     width: calc(100% - 16px);
+    padding: 24px 36px;
   }
   .profile-set-modal .modal-dialog {
     max-width: 700px;
@@ -610,7 +614,48 @@
     margin-left: 0;
     margin-top: 30px;
   }
-
+  .order-edit {
+    padding: 24px;
+    order: 2;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .order-preview {
+    padding: 24px;
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .user-order-wrapper {
+    flex-direction: column;
+  }
+  #requestModal .modal-content {
+    padding: 70px 100px;
+  }
+  #requestModal .modal-dialog {
+    width: 700px;
+  }
+  .success-modal .modal-content {
+    padding: 70px 100px;
+  }
+  .success-modal .modal-dialog {
+    width: 700px;
+  }
+  .profile-img {
+    height: 180px;
+  }
+  .profile-favourite .icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .seller-shop-item {
+    width: calc(100% - 12px);
+    padding: 24px;
+  }
+  .seller-shop-item h6 {
+    margin-bottom: 15px;
+  }
 }
 
 //phones
@@ -1885,6 +1930,12 @@
     left: initial!important;
     transform: translate3d(0, 0, 0) !important;
   }
+  .cabinet-header-messages .dropdown-menu {
+    top: calc(100% + 15px)!important;
+    right: 0!important;
+    left: initial!important;
+    transform: translate3d(0, 0, 0) !important;
+  }
   .profile-modal {
     padding: 24px;
   }
@@ -2096,6 +2147,164 @@
     width: 100%;
     margin-left: 0;
     margin-top: 30px;
+  }
+  .order-edit {
+    padding: 15px;
+    order: 2;
+    width: 100%;
+    margin-top: 30px;
+    border: 1px solid #f1f1f1;
+  }
+  .order-preview {
+    padding: 15px;
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+    border: 1px solid #f1f1f1;
+  }
+  .user-order-wrapper {
+    flex-direction: column;
+  }
+  .order-preview-card-caption {
+    margin-left: 15px;
+  }
+  .order-preview-card-caption h6 {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .order-edit .form-group-title span {
+    display: none;
+  }
+  .support {
+    bottom: 15px;
+    right: 15px;
+  }
+  .support-item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .support-item span {
+    display: none;
+  }
+  .support-item.whatsapp svg {
+    display: block;
+  }
+  .support-item svg {
+    width: 24px;
+    height: 24px;
+  }
+  #requestModal .modal-dialog {
+    width: calc(100% - 30px);
+  }
+  #requestModal .modal-content {
+    padding: 30px 15px;
+  }
+  .request-modal-title h6 {
+    font-size: 24px;
+  }
+  .success-modal .modal-dialog {
+    width: calc(100% - 30px);
+  }
+  .success-modal .modal-content {
+    padding: 30px 15px;
+  }
+  .success-modal h6 {
+    font-size: 24px;
+  }
+  .product-nav-tabs .nav-link {
+    background: #f7f7f7;
+  }
+  .delete-product {
+    position: static;
+    transform: none;
+    margin: 15px auto;
+  }
+  .product-edit-modal .modal-header {
+    flex-direction: column;
+  }
+  .product-add-img-btn {
+    width: 130px;
+    height: 75px;
+  }
+  .product-add-img img {
+    width: 130px;
+    height: 75px;
+  }
+  .product-add-img-btn span {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 120%;
+  }
+  .product-add-form {
+    .half-form {
+      display: block;
+    }
+    .half-form .form-group-wrapper {
+      width: calc(100% - 16px);
+    }
+    .third-form {
+      display: block;
+    }
+    .third-form .form-group-wrapper {
+      width: calc(100% - 16px);
+    }
+    .form-group {
+      border: 1px solid #F1F1F1;
+    }
+  }
+  .seller-cabinet-products .product-edit-modal-tools .btn {
+    width: 100%;
+  }
+  .profile-container {
+    flex-direction: column;
+  }
+  .profile-container-left {
+    width: 100%;
+    display: flex;
+  }
+  .profile-img {
+    width: 140px;
+    height: 200px;
+  }
+  .client-profile-img {
+    background-size: 60px 60px;
+  }
+  .profile-tools {
+    flex: 1;
+    margin-top: 0;
+    margin-left: 15px;
+  }
+  .profile-container-right {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .seller-shop-item {
+    width: calc(100% - 12px);
+    padding: 24px;
+  }
+  .seller-shop-item h6 {
+    margin-bottom: 15px;
+  }
+  .favourite-client-card {
+    min-height: 210px;
+  }
+  .favourite-client-card-img {
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+  }
+  .favourite-client-card-name {
+    margin-top: 15px;
+  }
+  .favourite-client-card-name p {
+    font-size: 16px;
+    line-height: 120%;
   }
 }
 

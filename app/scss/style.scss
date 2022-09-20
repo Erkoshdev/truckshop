@@ -4899,6 +4899,10 @@
   background: #6FCF97;
 }
 
+.support-item.whatsapp svg {
+  display: none;
+}
+
 .support-item + .support-item {
   margin-left: 8px;
 }
@@ -5170,7 +5174,9 @@
   line-height: 16px;
   color: #27AE60;
   display: flex;
+  align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .profile-favourite {
@@ -5182,6 +5188,7 @@
   min-height: 40px;
   border: 1px solid #F1F1F1;
   border-radius: 8px;
+  position: relative;
 }
 
 .profile-favourite span {
@@ -5191,6 +5198,7 @@
   color: #1B1C1E;
   display: block;
   margin-right: 8px;
+  text-align: center;
 }
 
 .profile-favourite.active .icon {
