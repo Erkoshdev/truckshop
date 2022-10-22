@@ -656,6 +656,32 @@
   .seller-shop-item h6 {
     margin-bottom: 15px;
   }
+  .delivery-cabinet .user-card-wrapper .user-card {
+    width: 100%;
+  }
+  .delivery-count-card-wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  .archive-card {
+    display: block;
+    padding: 20px;
+  }
+  .archive-card-caption {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .archive-card-price {
+    margin-left: 0;
+    margin-top: 15px;
+    text-align: left;
+  }
+  .archive-card-price p {
+    text-align: left;
+  }
 }
 
 //phones
@@ -2305,6 +2331,42 @@
   .favourite-client-card-name p {
     font-size: 16px;
     line-height: 120%;
+  }
+  .delivery-cabinet .user-card-wrapper .user-card {
+    width: 100%;
+  }
+  .delivery-count-card-wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 16px;
+  }
+  .delivery-cabinet .user-card-wrapper .delivery-count-card {
+    padding: 14px 10px;
+  }
+  .delivery-count-card p {
+    font-size: 18px;
+  }
+  .delivery-count-card span {
+    font-size: 14px;
+  }
+  .archive-card {
+    display: block;
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+  }
+  .archive-card-caption {
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .archive-card-price {
+    margin-left: 0;
+    margin-top: 15px;
+    text-align: left;
+  }
+  .archive-card-price p {
+    text-align: left;
   }
 }
 

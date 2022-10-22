@@ -5337,6 +5337,189 @@
   text-align: center;
 }
 
+.delivery-cabinet .user-card-wrapper .user-card {
+  width: 50%;
+  margin-right: 0;
+}
+
+.delivery-count-card + .delivery-count-card {
+  margin-left: 16px;
+}
+
+.delivery-count-card-wrapper {
+  display: flex;
+  width: 50%;
+  margin-left: 16px;
+}
+
+.delivery-cabinet .user-card-wrapper .delivery-count-card {
+  width: 50%;
+}
+
+.delivery-count-card {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  padding: 23px 30px;
+}
+
+.delivery-count-card p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #1B1C1E;
+}
+
+.delivery-count-card span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #818294;
+  display: block;
+  margin-top: 10px;
+}
+
+.delivery-cabinet .seller-card-bottom .btn {
+  width: 100%;
+}
+
+.toggle-delivery-status {
+  width: 100%;
+}
+
+.toggle-delivery-status .dropdown-menu {
+  width: 100%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+
+}
+
+.toggle-delivery-status .dropdown-item {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-delivery-status .dropdown-item span {
+  display: block;
+  margin-left: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1B1C1E;
+}
+
+.toggle-delivery-status .dropdown-item + .dropdown-item {
+  border-top: 1px solid #F1F1F1;
+}
+
+.toggle-delivery-status .dropdown-item:first-of-type {
+  border-radius: 12px 12px 0 0;
+}
+
+.toggle-delivery-status .dropdown-item:last-of-type {
+  border-radius: 0 0 12px 12px;
+}
+
+.archive-card + .archive-card {
+  margin-top: 8px;
+}
+
+.archive-card {
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px 72px 24px 30px;
+}
+
+.archive-card-img {
+  display: flex;
+}
+
+.archive-card-img img {
+  width: 70px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+}
+
+.archive-card-img img + img {
+  margin-left: 16px;
+}
+
+.archive-card-caption {
+  margin-left: 36px;
+  max-width: 150px;
+}
+
+.archive-card-name p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1B1C1E;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.archive-card-date p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #818294;
+}
+
+.archive-card-number {
+  margin-top: 8px;
+}
+
+.archive-card-number p {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #1B1C1E;
+}
+
+.archive-card-price {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.archive-card-price p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: #1B1C1E;
+}
+
+.archive-card-list {
+  margin-top: 24px;
+}
+
+.select-date {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.select-date input {
+  margin-left: 12px;
+  min-width: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4080FF;
+  cursor: pointer;
+  width: 100px;
+  border: none;
+  background: transparent;
+}
+
 
 
 
